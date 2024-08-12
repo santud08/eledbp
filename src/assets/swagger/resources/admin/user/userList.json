@@ -1,0 +1,93 @@
+{
+    "page": {
+        "name": "page",
+        "in":"query",
+        "required":false,
+        "description": "page which page list you want",
+        "schema": {
+            "type": "integer",
+            "example":1,
+            "default":""
+        }
+    },
+    "limit": {
+        "name": "limit",
+        "in":"query",
+        "required":false,
+        "description": "how many items will fetch",
+        "schema": {
+            "type": "integer",
+            "example":10,
+            "default":""
+        }
+    },
+    "type": {
+        "name": "type",
+        "in":"query",
+        "required":false,
+        "description": "type which type list you want, type value must taken from type list api",
+        "schema": {
+            "type": "string"
+        }
+    },
+    "name": {
+        "name": "name",
+        "in":"query",
+        "required":false,
+        "description": "name which name list you want",
+        "schema": {
+            "type": "string"
+        }
+    },
+    "search_date_type": {
+        "name": "search_date_type",
+        "in":"query",
+        "required":false,
+        "description": "search_date_type which date you want to search. valid values are created_date/last_login_date. if you put date then it is mandatary",
+        "schema": {
+            "type": "string"
+        }
+    },
+    "start_date": {
+        "name": "start_date",
+        "in":"query",
+        "required":false,
+        "description": "start_date which date list you want, put the date in Y-m-d format",
+        "schema": {
+            "type": "string",
+            "format":"date"
+        }
+    },
+    "end_date": {
+        "name": "end_date",
+        "in":"query",
+        "required":false,
+        "description": "end_date which date list you want, , put the date in Y-m-d format",
+        "schema": {
+            "type": "string",
+            "format":"date"
+        }
+    },
+    "sort_order": {
+        "name": "sort_order",
+        "in":"query",
+        "required":false,
+        "description": "sort_order which sort_order list you want",
+        "schema": {
+            "type": "string",
+            "example":"asc/desc",
+            "default":""
+        }
+    },
+    "sort_by": {
+        "name": "sort_by",
+        "in":"query",
+        "required":false,
+        "description": "sort_by which sort_by list you want",
+        "schema": {
+            "type": "string",
+            "example":"type/email/created_at",
+            "default":""
+        }
+    }
+}

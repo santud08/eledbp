@@ -1,0 +1,28 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["draft_relation_id"],
+          "type": "object",
+          "properties":{
+            "draft_relation_id": {
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["draft_relation_id"],
+          "type": "object",
+          "properties":{
+            "draft_relation_id": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

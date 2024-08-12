@@ -1,0 +1,42 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["video_id","user_session_id"],
+          "type": "object",
+          "properties": {
+            "video_id": {
+              "type": "integer",
+              "example":"id of video",
+              "default":""
+            },
+            "user_session_id": {
+              "type": "string",
+              "example":"non loggedin user session id",
+              "default":""
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["video_id","user_session_id"],
+          "type": "object",
+          "properties": {
+            "video_id": {
+                "type": "integer",
+                "example":"id of video",
+                "default":""
+            },
+            "user_session_id": {
+                "type": "string",
+                "example":"non loggedin user session id",
+                "default":""
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

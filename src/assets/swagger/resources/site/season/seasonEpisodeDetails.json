@@ -1,0 +1,21 @@
+{
+  "id":{
+    "name": "id",
+    "in":"path",
+    "required":true,
+    "description": "tvshow id  which details you want",
+    "schema": {
+      "type": "integer",
+      "example":"1"
+    }
+  },
+  "season_id":{
+    "name": "season_id",
+    "in":"query",
+    "required":true,
+    "description": "season id  which details you want",
+    "schema": {
+      "type": "integer"
+    }
+  }
+}

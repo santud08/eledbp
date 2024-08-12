@@ -1,0 +1,84 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["search_text","search_type","sort_by","sort_order","is_first","page","limit"],
+          "type": "object",
+          "properties": {
+            "search_text": {
+              "type": "string"
+            },
+            "search_type": {
+              "type": "string",
+              "example":"movies/tv_shows/webtoons/videos/people/award/tags/companies",
+              "default":"movies"
+            },
+            "sort_by": {
+              "type": "string",
+              "example":"latest/oldest/popularity/default/alphabetic/birth_year",
+              "default":"default"
+            },
+            "sort_order": {
+              "type": "string",
+              "example":"asc/desc",
+              "default":"asc"
+            },
+            "is_first": {
+              "type": "string",
+              "example":"yes/no",
+              "default":"no"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["search_text","search_type","sort_by","sort_order","is_first","page","limit"],
+          "type": "object",
+          "properties": {
+            "search_text": {
+              "type": "string"
+            },
+            "search_type": {
+              "type": "string",
+              "example":"movies/tv_shows/webtoons/videos/people/award/tags/companies",
+              "default":"movies"
+            },
+            "sort_by": {
+              "type": "string",
+              "example":"latest/oldest/popularity/default/alphabetic/birth_year",
+              "default":"default"
+            },
+            "sort_order": {
+              "type": "string",
+              "example":"asc/desc",
+              "default":"asc"
+            },
+            "is_first": {
+              "type": "string",
+              "example":"yes/no",
+              "default":"no"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

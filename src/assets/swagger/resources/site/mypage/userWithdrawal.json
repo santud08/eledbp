@@ -1,0 +1,34 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["user_id"],
+          "type": "object",
+          "properties":{
+            "user_id": {
+              "type": "integer"
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["user_id"],
+          "type": "object",
+          "properties":{
+            "user_id": {
+              "type": "integer"
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

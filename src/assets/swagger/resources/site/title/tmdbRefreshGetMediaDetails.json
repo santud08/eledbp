@@ -1,0 +1,74 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["title_id","tmdb_id","title_type","site_language","media_type"],
+          "type": "object",
+          "properties":{
+            "title_id": {
+              "type": "integer"
+            },
+            "tmdb_id": {
+              "type": "integer"
+            },
+            "title_type": {
+              "type": "string",
+              "example":"movie/tv",
+              "default":""
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en"
+            },
+            "media_type": {
+              "type": "string",
+              "example":"video/image/poster",
+              "default":""
+            }, 
+            "season_id": {
+              "type": "integer"
+            },
+            "season_no": {
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["title_id","tmdb_id","title_type","site_language","media_type"],
+          "type": "object",
+          "properties":{
+            "title_id": {
+                "type": "integer"
+            },
+            "tmdb_id": {
+                "type": "integer"
+            },
+            "title_type": {
+                "type": "string",
+                "example":"movie/tv",
+                "default":""
+            },
+            "site_language": {
+                "type": "string",
+                "example":"en"
+            },
+            "media_type": {
+                "type": "string",
+                "example":"video/image/poster",
+                "default":""
+            }, 
+            "season_id": {
+                "type": "integer"
+            },
+            "season_no": {
+                "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

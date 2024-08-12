@@ -1,0 +1,24 @@
+{
+    "site_language":{
+        "name": "site_language",
+        "in":"query",
+        "required":false,
+        "description": "site_language of title which language list you want",
+        "schema": {
+          "type": "string",
+          "example":"en,ko",
+          "default": "en"
+        }
+    },
+    "type":{
+        "name": "type",
+        "in":"query",
+        "required":false,
+        "description": "type of title which language list you want",
+        "schema": {
+          "type": "string",
+          "example":"movie/tv/webtoons",
+          "default":""
+        }
+    }
+}

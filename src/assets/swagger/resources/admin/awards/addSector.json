@@ -1,0 +1,46 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+        "application/x-www-form-urlencoded": {
+            "schema": {
+                "required": ["award_id"],
+                "type": "object",
+                "properties":{
+                    "award_id": {
+                        "type": "integer",
+                        "example":1
+                    },
+                    "division_name_ko": {
+                        "type": "string",
+                        "example":""
+                    },
+                    "division_name_en": {
+                        "type": "string",
+                        "example":""
+                    }
+                }
+            }
+        },
+        "application/json": {
+            "schema": {
+                "required": ["award_id"],
+                "type": "object",
+                "properties":{
+                    "award_id": {
+                        "type": "integer",
+                        "example":1
+                    },
+                    "division_name_ko": {
+                        "type": "string",
+                        "example":""
+                    },
+                    "division_name_en": {
+                        "type": "string",
+                        "example":""
+                    }
+                }
+            }
+        }   
+    },
+    "required": true
+}

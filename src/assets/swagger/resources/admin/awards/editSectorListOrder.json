@@ -1,0 +1,22 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+        "application/json": {
+            "schema": {
+                "type": "object",
+                "required":["award_id","sector_id_order"],
+                "properties":{
+                    "award_id": {
+                        "type": "integer"
+                    },
+                    "sector_id_order": {
+                        "type": "array",
+                        "items":{"type": "integer"},
+                        "example":[1,2]
+                    }
+                }
+            }
+        }
+    },
+    "required": true
+}

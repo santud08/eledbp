@@ -1,0 +1,13 @@
+{
+    "type":{
+        "name": "type",
+        "in":"query",
+        "required":false,
+        "description": "type of title which type status list you want",
+        "schema": {
+          "type": "string",
+          "example":"movie/tv/webtoons",
+          "default": "movie"
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["draft_request_id","site_language","credit_type","season_id"],
+          "type": "object",
+          "properties": {
+            "draft_request_id": {
+              "type": "integer",
+              "example":"",
+              "default":""
+            },
+            "site_language": {
+              "type": "string",
+              "example":"valid input are en/ko",
+              "default":""
+            },
+            "credit_type": {
+              "type": "string",
+              "example":"valid input are character/crew",
+              "default":""
+            },
+            "season_id": {
+              "type": "integer",
+              "example":"",
+              "default":""
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["draft_request_id","site_language","credit_type","season_id"],
+          "type": "object",
+          "properties": {
+            "draft_request_id": {
+                "type": "integer",
+                "example":"",
+                "default":""
+            },
+            "site_language": {
+                "type": "string",
+                "example":"valid input are en/ko",
+                "default":""
+            },
+            "credit_type": {
+                "type": "string",
+                "example":"valid input are character/crew",
+                "default":""
+            },
+            "season_id": {
+                "type": "integer",
+                "example":"",
+                "default":""
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

@@ -1,0 +1,28 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["is_main_poster","image"],
+          "type": "object",
+          "properties":{
+            "title_id": {
+              "type": "integer"
+            },
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "is_main_poster": {
+              "type": "string",
+              "example":"y/n"
+            },
+            "image": {
+              "type": "string",
+              "format":"binary"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

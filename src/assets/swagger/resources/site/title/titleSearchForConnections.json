@@ -1,0 +1,45 @@
+{
+    "search_text":{
+        "name": "search_text",
+        "in":"query",
+        "required":true,
+        "description": "search text",
+        "schema": {
+          "type": "string",
+          "default": ""
+        }
+    },
+    "search_type":{
+        "name": "search_type",
+        "in":"query",
+        "required":false,
+        "description": "search type, which type of record you want to search",
+        "schema": {
+          "type": "string",
+          "example":"movie/tv/webtoons",
+          "default": "All means blank"
+        }
+    },
+    "page":{
+        "name": "page",
+        "in":"query",
+        "required":false,
+        "description": "page which page of record you want to search",
+        "schema": {
+          "type": "integer",
+          "example":"1",
+          "default": 1
+        }
+    },
+    "limit":{
+        "name": "limit",
+        "in":"query",
+        "required":false,
+        "description": "limit which how many of record you want to search",
+        "schema": {
+          "type": "integer",
+          "example":"10",
+          "default": 10
+        }
+    }
+}

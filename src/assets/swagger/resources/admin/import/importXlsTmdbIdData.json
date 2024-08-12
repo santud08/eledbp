@@ -1,0 +1,18 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["importfile"],
+          "type": "object",
+          "properties":{
+            "importfile": {
+              "type": "string",
+              "format":"binary"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

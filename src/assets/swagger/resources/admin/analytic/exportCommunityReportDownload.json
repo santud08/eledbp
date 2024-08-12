@@ -1,0 +1,23 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+            "required": ["search_params","list_type"],
+            "type": "object",
+            "properties":{
+            "search_params": {
+                "type": "object",
+                "properties":{"category":{"type":"string"},"start_date":{"type":"string","format":"date"},"end_date":{"type":"string","format":"date"}},
+                "example":{"category":"movie/tv/webtoons/people","start_date":"2023-12-12","end_date":"2024-11-11"}
+            },
+            "list_type": {
+                "type": "string",
+                "example":"comment/trivia/famous_line/goofs"
+            }           
+          }
+        }
+      }
+    },
+    "required": true
+}

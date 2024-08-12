@@ -1,0 +1,12 @@
+{
+    "type":{
+       "name": "type",
+       "in":"query",
+       "required":false,
+       "description": "nominee_id which nominee details you want. valid types movie/tv/webtoons",
+       "schema": {
+           "type": "string"
+       }
+    }
+  
+}

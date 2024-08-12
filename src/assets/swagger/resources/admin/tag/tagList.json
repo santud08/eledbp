@@ -1,0 +1,70 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "properties":{
+            "category_id": {
+              "type": "integer"
+            },
+            "sub_category_id": {
+              "type": "integer"
+            },
+            "tag_name": {
+              "type": "string"
+            },
+            "sort_by": {
+              "type": "string",
+              "example":"id/category_name/sub_category_name/tag_name_en/tag_name_ko"
+            },
+            "sort_order": {
+              "type": "string",
+              "example":"asc/desc"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties":{
+            "category_id": {
+              "type": "integer"
+            },
+            "sub_category_id": {
+              "type": "integer"
+            },
+            "tag_name": {
+              "type": "string"
+            },
+            "sort_by": {
+              "type": "string",
+              "example":"id/category_name/sub_category_name/tag_name_en/tag_name_ko"
+            },
+            "sort_order": {
+              "type": "string",
+              "example":"asc/desc"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      }
+    },
+    "required": false
+}

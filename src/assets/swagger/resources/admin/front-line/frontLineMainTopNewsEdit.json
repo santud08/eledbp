@@ -1,0 +1,50 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "required":["list_type","news_id","status"],
+          "properties":{
+            "list_type": {
+              "type": "string",
+              "example":"movie/tv_show"
+            },
+            "news_id": {
+              "type": "integer"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "string",
+              "example":"active/inactive"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required":["list_type","news_id","status"],
+          "properties":{
+            "list_type": {
+              "type": "string",
+              "example":"movie/tv_show"
+            },
+            "news_id": {
+              "type": "integer"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "string",
+              "example":"active/inactive"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

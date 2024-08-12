@@ -1,0 +1,37 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+          "required": ["draft_request_id","site_language","season_id"],
+          "type": "object",
+          "properties":{
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "draft_credit_id": {
+              "type": "integer"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en/ko"
+            },
+            "season_id": {
+              "type": "integer"
+            },
+            "character_details": {
+              "type": "array",
+              "items":{"type": "object","properties":{"temp_id":{"type":"integer"},"action_type":{"type":"string"},"character_name":{"type":"string"},"description":{"type":"string"},"is_guest":{"type":"integer"},"poster":{"type":"string"},"order":{"type":"integer"}}},
+              "example":[{"temp_id":"","action_type":"a/e/d","character_name":"","description":"","is_guest":"0/1","poster":"","order":""}]
+            },
+            "crew_details": {
+              "type": "array",
+              "items":{"type": "object","properties":{"temp_id":{"type":"integer"},"action_type":{"type":"string"},"people_id":{"type":"integer"},"cast_name":{"type":"string"},"job":{"type":"string"},"poster":{"type":"string"},"tmdb_id":{"type":"integer"},"order":{"type":"integer"}}},
+              "example":[{"temp_id":"","action_type":"a/e/d","people_id":"","cast_name":"","job":"","poster":"","tmdb_id":"","order":""}]
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

@@ -1,0 +1,22 @@
+
+{  
+    "award_id":{
+      "name": "award_id",
+      "in":"query",
+      "required":true,
+      "description": "award id which list you want",
+      "schema": {
+        "type": "integer"
+      }
+    },
+    "search_text":{
+      "name": "search_text",
+      "in":"query",
+      "required":true,
+      "description": "search_text which search_text list you want",
+      "schema": {
+        "type": "string"
+      }
+    }
+}
+

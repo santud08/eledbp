@@ -1,0 +1,31 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+          "required": ["draft_request_id","draft_season_id","site_language"],
+          "type": "object",
+          "properties":{
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "draft_season_id": {
+              "type": "integer"
+            },
+            "draft_episode_id": {
+              "type": "integer"
+            },
+            "site_language": {
+              "type": "string"
+            },
+            "episode_details": {
+              "type": "array",
+              "items":{"type": "object","properties":{"action_type":{"type":"string"},"name":{"type":"string"},"description":{"type":"string"},"poster":{"type":"string"},"release_date":{"type":"string","format":"date"},"episode_number":{"type":"integer"}}},
+              "example":[{"action_type":"a/d/e","name":"will smith nine","description":"","poster":null,"release_date":"1990-10-10","episode_number":10}]
+            }                  
+          }
+        }
+      }
+    },
+    "required": true
+}

@@ -1,0 +1,64 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "properties":{
+            "search_file_name": {
+              "type": "string"
+            },
+            "search_date": {
+              "type": "string"
+            },
+            "sort_by": {
+              "type": "string",
+              "example":"id/file_name/creation_date/message/status"
+            },
+            "sort_order": {
+              "type": "string",
+              "example":"asc/desc"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties":{
+            "search_file_name": {
+              "type": "string"
+            },
+            "search_date": {
+              "type": "string"
+            },
+            "sort_by": {
+              "type": "string",
+              "example":"id/file_name/creation_date/message/status"
+            },
+            "sort_order": {
+              "type": "string",
+              "example":"asc/desc"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      }
+    },
+    "required": false
+}

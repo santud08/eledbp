@@ -1,0 +1,91 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["name","site_language"],
+          "type": "object",
+          "properties":{
+            "name": {
+              "type": "string"
+            },
+            "site_language": {
+              "type": "string"
+            },
+            "relation_id": {
+              "type": "integer"
+            },
+            "aka": {
+              "type": "string"
+            },
+            "biography": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "birth_date": {
+              "type": "string",
+              "format":"date",
+              "example":"Y-m-d"
+            },
+            "kobis_id": {
+              "type": "integer"
+            },
+            "imdb_id": {
+              "type": "string"
+            },
+            "tmdb_id": {
+              "type": "integer"
+            },
+            "tiving_id": {
+              "type": "string"
+            },
+            "odk_id": {
+              "type": "string"
+            },
+            "official_site": {
+              "type": "string"
+            },
+            "facebook": {
+              "type": "string"
+            },
+            "instagram": {
+              "type": "string"
+            },
+            "twitter": {
+              "type": "string"
+            },
+            "death_date": {
+              "type": "string",
+              "format":"date",
+              "example":"Y-m-d"
+            },
+            "search_keyword": {
+              "type": "string",
+              "example":"value should be comma separated if multiple"
+            },
+            "news_keyword": {
+              "type": "string",
+              "example":"value should be comma separated if multiple"
+            },
+            "job[]": {
+              "type": "array",
+              "items":{"type":"integer"},
+              "example":[3]
+            },
+            "country": {
+              "type": "string",
+              "example":"Seoul, South Korea"
+            },
+            "image": {
+              "type": "string",
+              "format":"binary"
+            }
+            
+          }
+        }
+      }
+    },
+    "required": true
+}

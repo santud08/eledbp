@@ -1,0 +1,54 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["list_type","is_first"],
+          "type": "object",
+          "properties":{
+            "list_type": {
+              "type": "string",
+              "example":"favorite/rating/shared"
+            },
+            "is_first": {
+              "type": "string",
+              "example":"y/n"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["list_type","is_first"],
+          "type": "object",
+          "properties":{
+            "list_type": {
+              "type": "string",
+              "example":"favorite/rating/shared"
+            },
+            "is_first": {
+              "type": "string",
+              "example":"y/n"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

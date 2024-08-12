@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{pageTitle}}</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #E5E5E5;
+        }
+        p{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <table width="600" cell-padding="0" cell-spacing="0" style="margin: 60px auto; background-color: #fff; padding: 30px;">
+        <thead>
+            <tr>
+                <td style="border-bottom: 1px solid #E0E0E0; padding-bottom: 16px;"><img src="cid:logoImage" ></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 40px 0;">
+                   <p style="margin-bottom: 10px;font-size: 16px;color: #333;font-weight: 400;line-height: 140%;">Dear {{firstName}},</p>
+                   <p style="font-size: 16px;color: #4c4c4c;font-weight: 400;line-height: 140%;">We are pleased to inform you about your new role in 11DB team.</p>
+                   <table cell-padding="0" cell-spacing="0" style="width: 100%;padding: 24px 0;">
+                        <tr>
+                            <td style="width: 50%;color: #333;font-weight: 600;font-size: 16px;line-height: 150%;padding: 5px 0;">Email ID:</td>
+                            <td style="width: 50%;color: #666;font-weight: 400;font-size: 16px;line-height: 150%; padding: 5px 0">{{email}}</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50%;color: #333;font-weight: 600;font-size: 16px;line-height: 150%;padding: 5px 0;">Username:</td>
+                            <td style="width: 50%;color: #666;font-weight: 400;font-size: 16px;line-height: 150%; padding: 5px 0"> {{name}}</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 50%;color: #333;font-weight: 600;font-size: 16px;line-height: 150%;padding: 5px 0;">User Role:</td>
+                            <td style="width: 50%;color: #666;font-weight: 400;font-size: 16px;line-height: 150%; padding: 5px 0">{{userRole}}</td>
+                        </tr>
+                        {{#if password}}
+                        <tr>
+                            <td style="width: 50%;color: #333;font-weight: 600;font-size: 16px;line-height: 150%;padding: 5px 0;">Password:</td>
+                            <td style="width: 50%;color: #666;font-weight: 400;font-size: 16px;line-height: 150%; padding: 5px 0">{{password}}</td>
+                        </tr>
+                        {{/if}}
+                    </table>
+                   
+                   <p style="margin-bottom: 24px;font-size: 16px;color: #4c4c4c;font-weight: 400;line-height: 140%;">Your user account will grant you access to various features and functionalities, depending on your assigned access level. Please familiarize yourself with the privileges and responsibilities associated with your access level.</p>
+                   <p style="margin-bottom: 24px;font-size: 16px;color: #4c4c4c;font-weight: 400;line-height: 140%;">For security reasons, we recommend changing your password upon your first login. </p>
+                   <p style="margin-bottom: 24px;font-size: 16px;color: #4c4c4c;font-weight: 400;line-height: 140%;">If you have any questions or need further assistance, please contact our support team at  <a href="mailto:{{supportMail}}" style="color: #4c4c4c;display: inline-block;text-decoration: underline;">{{supportMail}}</a>. We're here to help you !</p>
+                   <p style="margin-bottom: 32px;font-size: 16px;color: #4c4c4c;font-weight: 400;line-height: 140%;">Thank you for choosing 11DB.  We appreciate your trust in us.</p>
+                   <p style="font-size: 16px; line-height: 130%;color: #4c4c4c;margin-bottom: 10px;">Best regards,</p>
+                    <p style="font-size: 16px; line-height: 130%;color: #4c4c4c;">{{thanksFrom}}</p>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td style="border-top: 1px solid #E0E0E0; padding-top: 30px;">
+                    <p style="font-size: 12px; font-weight: 400; color: #828282; line-height: 160%;"> COPYRIGHT©2022 11DB.IO</p>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

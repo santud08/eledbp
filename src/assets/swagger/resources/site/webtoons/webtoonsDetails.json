@@ -1,0 +1,13 @@
+{
+    
+    "id":{
+        "name": "id",
+        "in":"path",
+        "required":true,
+        "description": "id for which details you want",
+        "schema": {
+          "type": "integer",
+          "default": ""
+        }
+    }
+}

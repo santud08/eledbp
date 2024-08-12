@@ -1,0 +1,128 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+          "required": ["name","title_status","site_language"],
+          "type": "object",
+          "properties":{
+            "name": {
+              "type": "string"
+            },
+            "title_status": {
+              "type": "string",
+              "example":"rumored/planned/in_production/post_production/released/canceled"
+            },
+            "tmdb_id": {
+              "type": "integer"
+            },
+            "kobis_id": {
+              "type": "string"
+            },
+            "imdb_id": {
+              "type": "string"
+            },
+            "tiving_id": {
+              "type": "string"
+            },
+            "odk_id": {
+              "type": "string"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en/ko"
+            },
+            "summary": {
+              "type": "string"
+            },
+            "aka": {
+              "type": "string"
+            },
+            "plot": {
+              "type": "string"
+            },
+            "official_site": {
+              "type": "string"
+            },
+            "search_keyword": {
+              "type": "string",
+              "example":"value should be comma separated if multiple given"
+            },
+            "news_search_keyword": {
+              "type": "string",
+              "example":"value should be comma separated if multiple given"
+            },
+            "release_date": {
+              "type": "string",
+              "format":"date",
+              "example":"Y-m-d"
+            },
+            "is_rerelease": {
+              "type": "integer",
+              "example":"0/1"
+            },
+            "re_release": {
+              "type": "array",
+              "items":{"type": "string","format":"date"},
+              "example":["2022-10-01","2021-10-01"]
+            },
+            "runtime": {
+              "type": "integer",
+              "example":0
+            },
+            "footfalls": {
+              "type": "integer",
+              "example":0
+            },
+            "certification": {
+              "type": "string",
+              "example":"all/12/15/18/restrict/nr"
+            },
+            "language": {
+              "type": "string",
+              "example":"english/korean"
+            },
+            "country": {
+              "type": "array",
+              "items":{"type": "integer"},
+              "example":[1,2]
+            },
+            "connections": {
+              "type": "array",
+              "items":{"type": "integer"},
+              "example":[1,2]
+            },
+            "series": {
+              "type": "array",
+              "items":{"type": "object","properties":{"title_id":{"type":"integer"},"tmdb_id":{"type":"integer"}}},
+              "example":[{"title_id":122,"tmdb_id":12355}]
+            },
+            "original_work": {
+              "type": "array",
+              "items":{"type": "object","properties":{"type":{"type":"string"},"title":{"type":"string"},"original_artist":{"type":"string"}}},
+              "example":[{"type":"Game","title":"john","original_artist":"will smith"}]
+            },
+            "watch_on_stream": {
+              "type": "array",
+              "items":{"type": "object","properties":{"ott_provider_id":{"type":"integer"},"ott_provider_provided_id":{"type":"string"}}},
+              "example":[{"ott_provider_id":80013762,"ott_provider_provided_id":"222"}]
+            },
+            "watch_on_rent": {
+              "type": "array",
+              "items":{"type": "object","properties":{"ott_provider_id":{"type":"integer"},"ott_provider_provided_id":{"type":"string"}}},
+              "example":[{"ott_provider_id":80013762,"ott_provider_provided_id":"222"}]
+            },
+            "watch_on_buy": {
+              "type": "array",
+              "items":{"type": "object","properties":{"ott_provider_id":{"type":"integer"},"ott_provider_provided_id":{"type":"string"}}},
+              "example":[{"ott_provider_id":80013762,"ott_provider_provided_id":"222"}]
+            },
+            "relation_id": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

@@ -1,0 +1,54 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["communication_type","is_first"],
+          "type": "object",
+          "properties":{
+            "communication_type": {
+              "type": "string",
+              "example":"comment/trivia/famous_line/goofs"
+            },
+            "is_first": {
+              "type": "string",
+              "example":"y/n"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["communication_type","is_first"],
+          "type": "object",
+          "properties":{
+            "communication_type": {
+              "type": "string",
+              "example":"comment/trivia/famous_line/goofs"
+            },
+            "is_first": {
+              "type": "string",
+              "example":"y/n"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

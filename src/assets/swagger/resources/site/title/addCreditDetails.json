@@ -1,0 +1,41 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+          "required": ["draft_request_id","title_type","site_language"],
+          "type": "object",
+          "properties":{
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "title_type": {
+              "type": "string",
+              "example":"movie/tv"
+            },
+            "draft_credit_id": {
+              "type": "integer"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en/ko"
+            },
+            "season_id": {
+              "type": "integer"
+            },
+            "cast_details": {
+              "type": "array",
+              "items":{"type": "object","properties":{"action_type":{"type":"string"},"temp_id":{"type":"integer"},"people_id":{"type":"integer"},"tmdb_id":{"type":"integer"},"cast_name":{"type":"string"},"poster":{"type":"string"},"character_name":{"type":"string"},"job":{"type":"string"},"is_guest":{"type":"integer"},"order":{"type":"integer"}}},
+              "example":[{"action_type":"a/e/d as per add/edit/delete","temp_id":1,"people_id":"","tmdb_id":1221,"cast_name":"Keanu korean", "poster":"","character_name":"John","job":"Actor","is_guest":0,"order":1}]
+            },
+            "crew_details": {
+              "type": "array",
+              "items":{"type": "object","properties":{"action_type":{"type":"string"},"temp_id":{"type":"integer"},"people_id":{"type":"integer"},"tmdb_id":{"type":"integer"},"job":{"type":"string"},"poster":{"type":"string"},"cast_name":{"type":"string"},"order":{"type":"integer"}}},
+              "example":[{"action_type":"a/e/d as per add/edit/delete","temp_id":2,"people_id":1,"tmdb_id":1212,"job":"Sound","poster":"","cast_name":"","order":1}]
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

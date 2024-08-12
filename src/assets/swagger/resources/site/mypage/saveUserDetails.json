@@ -1,0 +1,36 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["user_id","user_name","user_email","is_delete_image","user_default_language"],
+          "type": "object",
+          "properties":{
+            "user_id": {
+              "type": "integer"
+            },
+            "user_name": {
+              "type": "string"
+            },
+            "user_email": {
+              "type": "string",
+              "format":"email"
+            },
+            "is_delete_image": {
+              "type": "string",
+              "example":"y/n"
+            },
+            "user_default_language": {
+              "type": "string",
+              "example":"en/ko"
+            },
+            "profile_image": {
+              "type": "string",
+              "format":"binary"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

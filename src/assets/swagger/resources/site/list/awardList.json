@@ -1,0 +1,33 @@
+{
+    "date":{
+        "name": "date",
+        "in":"query",
+        "required":false,
+        "description": "date which date details you want",
+        "schema": {
+          "type": "string",
+          "format":"date",
+          "example":"2023-11-23"
+        }
+    },
+    "page":{
+        "name": "page",
+        "in":"query",
+        "required":false,
+        "description": "page from where you fetch the details",
+        "schema": {
+          "type": "integer",
+          "example":1
+        }
+    },
+    "limit":{
+        "name": "limit",
+        "in":"query",
+        "required":false,
+        "description": "limit from upto you fetch the details",
+        "schema": {
+          "type": "integer",
+          "example":10
+        }
+    }
+}

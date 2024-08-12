@@ -1,0 +1,12 @@
+{
+    "search_text":{
+       "name": "search_text",
+       "in":"query",
+       "required":false,
+       "description": "search_text which details you want",
+       "schema": {
+           "type": "string"
+        }
+    }
+  
+}

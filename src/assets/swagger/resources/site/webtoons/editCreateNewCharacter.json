@@ -1,0 +1,38 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["title_id","credit_type","character_name","is_guest"],
+          "type": "object",
+          "properties":{
+            "title_id": {
+              "type": "integer"
+            },
+            "credit_type": {
+              "type": "string",
+              "example":"character",
+              "default":"character"
+            },
+            "description": {
+              "type": "string"
+            },
+            "character_name": {
+              "type": "string"
+            },
+            "is_guest": {
+              "type": "string",
+              "example":"0/1",
+              "default":0
+            },
+            "image": {
+              "type": "string",
+              "format":"binary"
+            }
+            
+          }
+        }
+      }
+    },
+    "required": true
+}

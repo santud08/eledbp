@@ -1,0 +1,56 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["search_text","site_language"],
+          "type": "object",
+          "properties":{
+            "search_text": {
+              "type": "string"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en/ko"
+            },
+            "page": {
+              "type": "integer",
+              "example":"1",
+              "default":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":"10",
+              "default":10
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["search_text","site_language"],
+          "type": "object",
+          "properties":{
+            "search_text": {
+              "type": "string"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en/ko"
+            },
+            "page": {
+                "type": "integer",
+                "example":"1",
+                "default":""
+            },
+            "limit": {
+                "type": "integer",
+                "example":"10",
+                "default":""
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

@@ -1,0 +1,23 @@
+{
+    
+    "id":{
+        "name": "id",
+        "in":"path",
+        "required":true,
+        "description": "id for which details you want",
+        "schema": {
+          "type": "integer",
+          "default": ""
+        }
+    },
+    "season_id":{
+        "name": "season_id",
+        "in":"path",
+        "required":true,
+        "description": "season_id for which details you want",
+        "schema": {
+          "type": "integer",
+          "default": ""
+        }
+    }
+}

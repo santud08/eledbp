@@ -1,0 +1,48 @@
+{
+    "category": {
+        "name": "category",
+        "in":"query",
+        "required":true,
+        "description": "category  which category details you want",
+        "schema": {
+            "type": "string",
+            "example":"all/movie/tv/webtoons/people/awards/video",
+            "default":"all"
+        }
+    },
+    "date_type": {
+        "name": "date_type",
+        "in":"query",
+        "required":false,
+        "description": "date_type  which type details you want. if you select date type you must change category all to any other and start date and edn is must",
+        "schema": {
+            "type": "string",
+            "example":"daily/monthly/yearly",
+            "default":""
+        }
+    },
+    "start_date": {
+        "name": "start_date",
+        "in":"query",
+        "required":false,
+        "description": "start_date  which from which details you want",
+        "schema": {
+            "type": "string",
+            "format":"date",
+            "example":"2023-11-29",
+            "default":""
+        }
+    },
+    "end_date": {
+        "name": "end_date",
+        "in":"query",
+        "required":false,
+        "description": "end_date  which upto which details you want",
+        "schema": {
+            "type": "string",
+            "format":"date",
+            "example":"2023-11-30",
+            "default":""
+        }
+    }
+}

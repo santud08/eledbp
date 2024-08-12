@@ -1,0 +1,44 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["commentable_id","commentable_type","tab_type","message_text","spoiler"],
+          "type": "object",
+          "properties":{
+            "commentable_id": {
+              "type": "integer"
+            },
+            "commentable_type": {
+              "type": "string",
+              "example":"title/people"
+            },
+            "tab_type": {
+              "type": "string",
+              "example":"comment,trivia/famous_line/goofs"
+            },
+            "message_text": {
+              "type": "string"
+            },
+            "spoiler": {
+              "type": "string",
+              "example":"y/n"
+            },
+            "famouse_id": {
+              "type": "integer",
+              "example":"when tab_type is famous_line then provide it as per commentable_type otherwise it is optional"
+            },
+            "season_id": {
+              "type": "integer",
+              "example":"when commentable_type is title & it tv show then provide it otherwise it is optional"
+            },
+            "image": {
+              "type": "string",
+              "format":"binary"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

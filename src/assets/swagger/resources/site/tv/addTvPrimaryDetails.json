@@ -1,0 +1,88 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+          "required": ["name","title_status","site_language"],
+          "type": "object",
+          "properties":{
+            "name": {
+              "type": "string"
+            },
+            "title_status": {
+              "type": "string",
+              "example":"returning_series/planned/pilot/in_production/ended/canceled"
+            },
+            "relation_id": {
+              "type": "integer"
+            },
+            "tmdb_id": {
+              "type": "integer"
+            },
+            "imdb_id": {
+              "type": "string"
+            },
+            "tiving_id": {
+              "type": "string"
+            },
+            "odk_id": {
+              "type": "string"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en/ko"
+            },
+            "summary": {
+              "type": "string"
+            },
+            "official_site": {
+              "type": "string"
+            },
+            "search_keyword": {
+              "type": "string",
+              "example":"if multiple the add it by comma separated"
+            },
+            "release_date": {
+              "type": "string",
+              "format":"date",
+              "example":"Y-m-d"
+            },
+            "release_date_to": {
+              "type": "string",
+              "format":"date",
+              "example":"Y-m-d"
+            },
+            "runtime": {
+              "type": "integer"
+            },
+            "rating": {
+              "type": "integer"
+            },
+            "certification": {
+              "type": "string",
+              "example":"all/7/12/15/19/nr"
+            },
+            "language": {
+              "type": "string"
+            },
+            "country": {
+              "type": "array",
+              "items":{"type": "integer"},
+              "example":[1,2,3]
+            },
+            "connections": {
+              "type": "array",
+              "items":{"type":"integer"},
+              "example":[2,4,5]
+            },
+            "original_work": {
+              "type": "array",
+              "items":{"type": "object","properties":{"type":{"type":"string"},"title":{"type":"string"},"original_artist":{"type":"string"}}},
+              "example":[{"type": "Game","title": "john","original_artist": "will smith"}]
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

@@ -1,0 +1,54 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["people_id","tmdb_id","site_language","media_type"],
+          "type": "object",
+          "properties":{
+            "people_id": {
+              "type": "integer"
+            },
+            "tmdb_id": {
+              "type": "integer"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en/ko",
+              "default":"en"
+            },
+            "media_type": {
+              "type": "string",
+              "example":"video/image",
+              "default":""
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["people_id","tmdb_id","site_language","media_type"],
+          "type": "object",
+          "properties":{
+            "people_id": {
+                "type": "integer"
+            },
+            "tmdb_id": {
+                "type": "integer"
+            },
+            "site_language": {
+                "type": "string",
+                "example":"en/ko",
+                "default":"en"
+            },
+            "media_type": {
+                "type": "string",
+                "example":"video/image",
+                "default":""
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

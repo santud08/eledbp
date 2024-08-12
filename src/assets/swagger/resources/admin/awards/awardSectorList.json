@@ -1,0 +1,11 @@
+{
+    "award_id":{
+        "name": "award_id",
+        "in":"query",
+        "required":true,
+        "description": "award id which list you want",
+        "schema": {
+            "type": "integer"
+        }
+    }
+}

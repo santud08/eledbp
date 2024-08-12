@@ -1,0 +1,11 @@
+{
+    "tag_id":{
+        "name": "tag_id",
+        "in":"query",
+        "required":true,
+        "description": "tag id which details you want",
+        "schema": {
+          "type": "integer"
+        }
+    }
+}

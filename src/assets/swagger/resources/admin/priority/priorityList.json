@@ -1,0 +1,12 @@
+{
+    "list_type":{
+        "name": "list_type",
+        "in":"query",
+        "required":true,
+        "description": "list type which details you want",
+        "schema": {
+            "type": "string",
+            "example":"movie/tv/webtoons/people"
+        }
+    }
+}

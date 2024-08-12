@@ -1,0 +1,52 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["type","shared_id","shared_channel"],
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "example":"valid input are title/people/award",
+              "default":""
+            },
+            "shared_id": {
+              "type": "integer",
+              "example":"id of title/people/award",
+              "default":""
+            },
+            "shared_channel": {
+              "type": "string",
+              "example":"valid input are facebook/twitter/mail/link",
+              "default":""
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["type","shared_id","shared_channel"],
+          "type": "object",
+          "properties": {
+            "type": {
+                "type": "string",
+                "example":"valid input are title/people/award",
+                "default":""
+            },
+            "shared_id": {
+                "type": "integer",
+                "example":"id of title/people/award",
+                "default":""
+            },
+            "shared_channel": {
+              "type": "string",
+              "example":"valid input are facebook/twitter/mail/link",
+              "default":""
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

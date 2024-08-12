@@ -1,0 +1,23 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required":["list_type","priority"],
+          "properties":{
+            "list_type": {
+              "type": "string",
+              "example":"movie/tv/webtoons/people"
+            },
+            "priority": {
+              "type": "array",
+              "items":{"type": "object","properties":{"id":{"type":"integer"},"eleven_db_priority":{"type":"integer"},"tmdb_priority":{"type":"integer"},"kobis_priority":{"type":"integer"}}},
+              "example":[{"id":"1","eleven_db_priority":"1/2/3","tmdb_priority":"1/2/3","kobis_priority":"1/2/3"}]
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

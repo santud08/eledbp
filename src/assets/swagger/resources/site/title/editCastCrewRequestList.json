@@ -1,0 +1,68 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["title_id","title_type","site_language","credit_type"],
+          "type": "object",
+          "properties":{
+            "title_id": {
+              "type": "integer"
+            },
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "draft_season_id": {
+              "type": "integer"
+            },
+            "title_type": {
+              "type": "string",
+              "example":"movie/tv"
+            },
+            "site_language": {
+              "type": "string"
+            },
+            "credit_type": {
+              "type": "string",
+              "example":"cast/crew"
+            },
+            "season_id": {
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["title_id","title_type","site_language","credit_type"],
+          "type": "object",
+          "properties":{
+            "title_id": {
+              "type": "integer"
+            },
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "draft_season_id": {
+              "type": "integer"
+            },
+            "title_type": {
+              "type": "string",
+              "example":"movie/tv"
+            },
+            "site_language": {
+              "type": "string"
+            },
+            "credit_type": {
+              "type": "string",
+              "example":"cast/crew"
+            },
+            "season_id": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

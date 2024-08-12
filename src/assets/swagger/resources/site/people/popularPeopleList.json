@@ -1,0 +1,26 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties":{
+            "department_type": {
+              "type": "array",
+              "items":{"type": "integer"},
+              "example":[1,2]
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

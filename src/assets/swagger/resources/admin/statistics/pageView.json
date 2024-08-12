@@ -1,0 +1,28 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+            "required": ["search_params"],
+            "type": "object",
+            "properties":{
+            "search_params": {
+                "type": "object",
+                "properties":{"access_platform":{"type":"string"},"page_type":{"type":"string"},"page_title":{"type":"string"},"utm_source":{"type":"string"},"start_date":{"type":"string","format":"date"},"end_date":{"type":"string","format":"date"}},
+                "example":{"access_platform":"","page_type":"movie/tv/webtoons/people/video/award/tag/company or blank","page_title":"","utm_source":"","start_date":"2024-11-11","end_date":"2024-11-11"}
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+           
+          }
+        }
+      }
+    },
+    "required": true
+}

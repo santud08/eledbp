@@ -1,0 +1,61 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["id","type","award_name_en","country","event_month","is_poster_deleted"],
+          "type": "object",
+          "properties":{
+            "id": {
+              "type": "integer",
+              "example":1
+            },
+            "type": {
+              "type": "string",
+              "example":"movie/tv/webtoons/people"
+            },
+            "award_name_ko": {
+              "type": "string"
+            },
+            "award_name_en": {
+              "type": "string"
+            },
+            "country": {
+              "type": "integer"
+            },
+            "city_name": {
+              "type": "string"    
+            },
+            "place": {
+              "type": "string"    
+            },
+            "event_month": {
+              "type": "integer",
+              "example":2
+            },
+            "news_search_keyword": {
+              "type": "string"    
+            },
+            "website_url": {
+              "type": "string"    
+            },
+            "explanation_en": {
+              "type": "string"    
+            },
+            "explanation_ko": {
+              "type": "string"    
+            },
+            "is_poster_deleted": {
+              "type": "string",
+              "example":"y/n"
+            },
+            "poster_image": {
+              "type": "string",
+              "format":"binary"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

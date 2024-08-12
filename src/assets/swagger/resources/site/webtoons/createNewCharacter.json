@@ -1,0 +1,43 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["draft_request_id","site_language","credit_type","character_name","is_guest"],
+          "type": "object",
+          "properties":{
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en/ko",
+              "default":"en"
+            },
+            "credit_type": {
+              "type": "string",
+              "example":"character",
+              "default":"character"
+            },
+            "description": {
+              "type": "string"
+            },
+            "character_name": {
+              "type": "string"
+            },
+            "is_guest": {
+              "type": "string",
+              "example":"0/1",
+              "default":0
+            },
+            "image": {
+              "type": "string",
+              "format":"binary"
+            }
+            
+          }
+        }
+      }
+    },
+    "required": true
+}

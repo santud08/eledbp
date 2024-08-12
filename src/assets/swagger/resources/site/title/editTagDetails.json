@@ -1,0 +1,41 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+          "required": ["title_id","site_language","title_type"],
+          "type": "object",
+          "properties":{
+            "title_id": {
+              "type": "integer"
+            },
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "draft_tag_id": {
+              "type": "integer"
+            },
+            "title_type": {
+              "type": "string",
+              "example":"movie/tv/webtoons"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en"
+            },
+            "genre_details": {
+              "type": "array",
+              "items":{"type": "object","properties":{"id":{"type":"integer"},"tag_id":{"type":"integer"},"title":{"type":"string"},"score":{"type":"integer"}}},
+              "example":[{"id":1,"tag_id":1,"title":"Drama","score":10}]
+            },
+            "tag_details": {
+              "type": "array",
+              "items":{"type": "object","properties":{"id":{"type":"integer"},"tag_id":{"type":"integer"},"title":{"type":"string"},"score":{"type":"integer"}}},
+              "example":[{"id":5,"tag_id":1,"title":"Science Fiction","score":10}]
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

@@ -1,0 +1,40 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "required":["parent_id","sub_category_name_en","sub_category_name_ko"],
+          "properties":{
+            "parent_id": {
+              "type": "integer"
+            },
+            "sub_category_name_en": {
+              "type": "string"
+            },
+            "sub_category_name_ko": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required":["parent_id","sub_category_name_en","sub_category_name_ko"],
+          "properties":{
+            "parent_id": {
+              "type": "integer"
+            },
+            "sub_category_name_en": {
+              "type": "string"
+            },
+            "sub_category_name_ko": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

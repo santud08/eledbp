@@ -1,0 +1,12 @@
+{
+    "type":{
+        "name": "type",
+        "in":"query",
+        "required":false,
+        "description": "type for search",
+        "schema": {
+          "type": "string",
+          "default": "movie/tv/webtoons/people"
+        }
+    }
+}

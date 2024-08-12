@@ -1,0 +1,64 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+        "application/json": {
+            "schema": {
+            "type": "object",
+            "required":["name_en","agency_code","name_ko"],
+            "properties":{
+                "name_en": {
+                "type": "string"
+                },
+                "address_en": {
+                "type": "string"
+                },
+                "aka_en": {
+                "type": "string"
+                },
+                "name_ko": {
+                "type": "string"
+                },
+                "address_ko": {
+                "type": "string"
+                },
+                "aka_ko": {
+                "type": "string"
+                },
+                "agency_code": {
+                "type": "string"
+                },
+                "email": {
+                "type": "string"
+                },
+                "phone_number": {
+                "type": "string"
+                },
+                "fax": {
+                "type": "string"
+                },
+                "site_link": {
+                "type": "string"
+                },
+                "instagram_link": {
+                "type": "string"
+                },
+                "facebook_link": {
+                "type": "string"
+                },
+                "twitter_link": {
+                "type": "string"
+                },
+                "youtube_link": {
+                "type": "string"
+                },
+                "manager_details": {
+                "type": "array",
+                "items":{"type": "object","properties":{"id":{"type":"integer"},"name_en":{"type":"string"},"name_ko":{"type":"string"},"email":{"type":"string"},"phone":{"type":"string"},"artists":{"type":"array","items":{"type": "integer"}}}},
+                "example":[{"id":"1","name_en":"Ram","name_ko":"Ram","email":"ramgmail.com","phone":"112345678901","artists":[1,2]}]
+                }
+            }
+            }
+        }
+    },
+    "required": true
+}

@@ -1,0 +1,12 @@
+{
+    "person_id":{
+        "name": "person_id",
+        "in":"query",
+        "required":true,
+        "description": "people id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    }
+}

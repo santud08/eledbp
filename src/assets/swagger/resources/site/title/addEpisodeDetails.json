@@ -1,0 +1,48 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["draft_request_id","draft_season_id","episode_no","episode_title","site_language"],
+          "type": "object",
+          "properties":{
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "draft_season_id": {
+              "type": "integer"
+            },
+            "episode_no": {
+              "type": "integer"
+            },
+            "episode_title": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string",
+              "example":"Y-m-d"
+            },
+            "overview": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "site_language": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string",
+              "example":"tv/webtoons or blank",
+              "default":""
+            },
+            "image": {
+              "type": "string",
+              "format":"binary"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

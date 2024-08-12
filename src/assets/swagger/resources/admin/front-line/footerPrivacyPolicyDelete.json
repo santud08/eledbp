@@ -1,0 +1,36 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "required":["page_type","page_id"],
+          "properties":{
+            "page_type": {
+              "type": "string",
+              "example":"privacy-policy/terms-of-service/about-us"
+            },
+            "page_id": {
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required":["page_type","page_id"],
+          "properties":{
+            "page_type": {
+              "type": "string",
+              "example":"privacy-policy/terms-of-service/about-us"
+            },
+            "page_id": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

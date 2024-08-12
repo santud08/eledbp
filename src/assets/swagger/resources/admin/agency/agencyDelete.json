@@ -1,0 +1,30 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "required":["id"],
+          "properties":{
+            "id": {
+              "type": "integer",
+              "example":1
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required":["id"],
+          "properties":{
+            "id": {
+              "type": "integer",
+              "example":1
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

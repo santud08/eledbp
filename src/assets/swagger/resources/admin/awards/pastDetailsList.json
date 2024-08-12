@@ -1,0 +1,64 @@
+{
+    "award_id":{
+        "name": "award_id",
+        "in":"query",
+        "required":true,
+        "description": "award id which list you want",
+        "schema": {
+            "type": "integer"
+        }
+    },
+    "round_id":{
+        "name": "round_id",
+        "in":"query",
+        "required":true,
+        "description": "round id which list you want",
+        "schema": {
+            "type": "integer"
+        }
+    },
+    "sort_by":{
+        "name": "sort_by",
+        "in":"query",
+        "required":false,
+        "description": "sort_by which sorting list you want",
+        "schema": {
+            "type": "string",
+            "example":"sector/work/charactar/comment/winner",
+            "default":""
+        }
+    },
+    "sort_order":{
+        "name": "sort_order",
+        "in":"query",
+        "required":false,
+        "description": "sort_order which order list you want",
+        "schema": {
+            "type": "string",
+            "example":"asc/desc",
+            "default":""
+        }
+    },
+    "page": {
+        "name": "page",
+        "in":"query",
+        "required":false,
+        "description": "page which page list you want",
+        "schema": {
+            "type": "integer",
+            "example":1,
+            "default":""
+        }
+    },
+    "limit": {
+        "name": "limit",
+        "in":"query",
+        "required":false,
+        "description": "how many items will fetch",
+        "schema": {
+            "type": "integer",
+            "example":10,
+            "default":""
+        }
+    }
+}

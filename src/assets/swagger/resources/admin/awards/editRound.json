@@ -1,0 +1,82 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+        "application/x-www-form-urlencoded": {
+            "schema": {
+                "required": ["round_id","award_id","year"],
+                "type": "object",
+                "properties":{
+                    "round_id": {
+                        "type": "integer",
+                        "example":1
+                    },
+                    "award_id": {
+                        "type": "integer",
+                        "example":1
+                    },
+                    "year": {
+                        "type": "integer",
+                        "example":"between 1960 - 2100"
+                    },
+                    "round": {
+                        "type": "integer",
+                        "example":"between 1-1000"
+                    },
+                    "round_name": {
+                        "type": "string",
+                        "example":""
+                    },
+                    "round_date": {
+                        "type": "string",
+                        "format":"date",
+                        "example":"start date in Y-m-d format"
+                    },
+                    "round_end_date": {
+                        "type": "string",
+                        "format":"date",
+                        "example":"end date in Y-m-d format"
+                    }
+                }
+            }
+        },
+        "application/json": {
+            "schema": {
+                "required": ["round_id","award_id","year"],
+                "type": "object",
+                "properties":{
+                    "round_id": {
+                        "type": "integer",
+                        "example":1
+                    },
+                    "award_id": {
+                        "type": "integer",
+                        "example":1
+                    },
+                    "year": {
+                        "type": "integer",
+                        "example":"between 1960 - 2100"
+                    },
+                    "round": {
+                        "type": "integer",
+                        "example":"between 1-1000"
+                    },
+                    "round_name": {
+                        "type": "string",
+                        "example":""
+                    },
+                    "round_date": {
+                        "type": "string",
+                        "format":"date",
+                        "example":"start date in Y-m-d format"
+                    },
+                    "round_end_date": {
+                        "type": "string",
+                        "format":"date",
+                        "example":"end date in Y-m-d format"
+                    }
+                }
+            }
+        }   
+    },
+    "required": true
+}

@@ -1,0 +1,28 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+            "required": ["search_params"],
+            "type": "object",
+            "properties":{
+            "search_params": {
+                "type": "object",
+                "properties":{"search_keyword":{"type":"string"},"landing_keyword":{"type":"string"},"start_date":{"type":"string","format":"date"},"end_date":{"type":"string","format":"date"}},
+                "example":{"search_keyword":"","landing_keyword":"","start_date":"2024-11-11","end_date":"2024-11-11"}
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+           
+          }
+        }
+      }
+    },
+    "required": true
+}

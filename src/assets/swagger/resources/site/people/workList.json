@@ -1,0 +1,46 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "required":["person_id","title_type","list_type"],
+          "properties":{
+            "person_id": {
+              "type": "integer",
+              "example":1
+            },
+            "title_type": {
+              "type": "string",
+              "example":"movie/tv/webtoons"
+            },
+            "list_type": {
+              "type": "string",
+              "example":"cast/crew"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required":["person_id","title_type","list_type"],
+          "properties":{
+            "person_id": {
+              "type": "integer",
+              "example":1
+            },
+            "title_type": {
+              "type": "string",
+              "example":"movie/tv/webtoons"
+            },
+            "list_type": {
+              "type": "string",
+              "example":"cast/crew"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

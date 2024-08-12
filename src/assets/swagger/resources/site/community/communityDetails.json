@@ -1,0 +1,68 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["commentable_id", "community_type","commentable_type","page","limit"],
+          "type": "object",
+          "properties": {
+            "commentable_id": {
+              "type": "integer"
+            },
+            "community_type": {
+              "type": "string",
+              "example":"comment/trivia/famous_line/goofs"
+            },
+            "commentable_type": {
+              "type": "string",
+              "example":"title/people"
+            },
+            "season_id": {
+              "type": "integer",
+              "example":"when commentable_type is title & it tv show then provide it otherwise it is optional"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["commentable_id", "community_type","commentable_type","page","limit"],
+          "type": "object",
+          "properties": {
+            "commentable_id": {
+              "type": "integer"
+            },
+            "community_type": {
+              "type": "string",
+              "example":"comment/trivia/famous_line/goofs"
+            },
+            "commentable_type": {
+              "type": "string",
+              "example":"title/people"
+            },
+            "season_id": {
+              "type": "integer",
+              "example":"when commentable_type is title & it tv show then provide it otherwise it is optional"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

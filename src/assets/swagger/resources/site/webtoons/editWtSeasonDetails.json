@@ -1,0 +1,90 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["title_id","season_no","season_name","site_language"],
+          "type": "object",
+          "properties":{
+            "title_id": {
+              "type": "integer"
+            },
+            "tmdb_id": {
+              "type": "integer"
+            },
+            "season_id": {
+              "type": "integer"
+            },
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "season_no": {
+              "type": "integer"
+            },
+            "season_name": {
+              "type": "string"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en/ko",
+              "default":"en"
+            },
+            "draft_season_id": {
+              "type": "integer",
+              "example":"",
+              "default":""
+            },
+            "release_date": {
+              "type": "string",
+              "format":"date"
+            },
+            "episode_count": {
+              "type": "integer"
+            },
+            "summary": {
+              "type": "string",
+              "example":"",
+              "default":""
+            },
+            "aka": {
+              "type": "string",
+              "example":"",
+              "default":""
+            },
+            "channel[]":{
+                "type": "array",
+                "items":{"type": "object","properties":{"id":{"type":"integer"},"webtoons_channel_id":{"type":"integer"}}},
+                "example":[{"id":"","webtoons_channel_id":""}]
+            },
+           
+            "search_keyword": {
+              "type": "string",
+              "example":"",
+              "default":""
+            },
+            "news_search_keyword": {
+              "type": "string",
+              "example":"",
+              "default":""
+            },
+            "image_action": {
+              "type": "string",
+              "example":"",
+              "default":""
+            }, 
+            "read[]":{
+                "type": "array",
+                "items":{"type": "object","properties":{"id":{"type":"integer"},"ott_provider_id":{"type":"integer"},"read_id":{"type":"string"}}},
+                "example":[{"id":"","ott_provider_id":"","read_id":""}]
+            },
+            "image": {
+              "type": "string",
+              "format":"binary"
+            }
+            
+          }
+        }
+      }
+    },
+    "required": true
+}

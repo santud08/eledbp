@@ -1,0 +1,53 @@
+{
+    "title_id":{
+        "name": "title_id",
+        "in":"query",
+        "required":false,
+        "description": "title id which list you want",
+        "schema": {
+            "type": "integer"
+        }
+    },
+    "type":{
+        "name": "type",
+        "in":"query",
+        "required":false,
+        "description": "type which search_text list you want valid type are movie/tv/webtoons",
+        "schema": {
+            "type": "string",
+            "example":"movie/tv/webtoons",
+            "default":""
+        }
+    },
+    "search_text":{
+        "name": "search_text",
+        "in":"query",
+        "required":true,
+        "description": "search_text which search_text list you want",
+        "schema": {
+            "type": "string"
+        }
+    },
+    "page": {
+        "name": "page",
+        "in":"query",
+        "required":true,
+        "description": "page which page list you want",
+        "schema": {
+            "type": "integer",
+            "example":1,
+            "default":""
+        }
+    },
+    "limit": {
+        "name": "limit",
+        "in":"query",
+        "required":true,
+        "description": "how many items will fetch",
+        "schema": {
+            "type": "integer",
+            "example":10,
+            "default":""
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "id":{
+        "name": "id",
+        "in":"path",
+        "required":true,
+        "description": "id for which details you want",
+        "schema": {
+          "type": "integer",
+          "default": ""
+        }
+    },
+    "language":{
+        "name": "language",
+        "in":"query",
+        "required":true,
+        "description": "language for which details you want",
+        "schema": {
+          "type": "string",
+          "example":"en/ko",
+          "default": "en"
+        }
+    },
+    "season_id":{
+        "name": "season_id",
+        "in":"query",
+        "required":false,
+        "description": "season_id for which details you want",
+        "schema": {
+          "type": "integer",
+          "default": ""
+        }
+    }
+}

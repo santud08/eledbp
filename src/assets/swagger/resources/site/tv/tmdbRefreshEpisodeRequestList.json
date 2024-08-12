@@ -1,0 +1,64 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["title_id","tmdb_id","season_no","site_language"],
+          "type": "object",
+          "properties":{
+            "title_id": {
+              "type": "integer"
+            },
+            "tmdb_id": {
+              "type": "integer"
+            },
+            "season_no": {
+              "type": "integer"
+            },
+            "season_id": {
+              "type": "integer"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en/ko",
+              "default":"en"
+            },
+            "search_text": {
+              "type": "string",
+              "example":""
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["title_id","tmdb_id","season_no","site_language"],
+          "type": "object",
+          "properties":{
+            "title_id": {
+                "type": "integer"
+            },
+            "tmdb_id": {
+                "type": "integer"
+            },
+            "season_no": {
+                "type": "integer"
+            },
+            "season_id": {
+                "type": "integer"
+            },
+            "site_language": {
+                "type": "string",
+                "example":"en/ko",
+                "default":"en"
+            },
+            "search_text": {
+                "type": "string",
+                "example":""
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

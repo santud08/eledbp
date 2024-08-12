@@ -1,0 +1,22 @@
+{
+    "id":{
+        "name": "id",
+        "in":"path",
+        "required":true,
+        "description": "parent category id  which details you want",
+        "schema": {
+            "type": "integer",
+            "example":"1"
+        }
+    },
+    "language":{
+        "name": "language",
+        "in":"query",
+        "required":true,
+        "description": "language  which details you want",
+        "schema": {
+            "type": "string",
+            "example":"en"
+        }
+    }
+}

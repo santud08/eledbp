@@ -1,0 +1,58 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "required":["page_type","title","date","content"],
+          "properties":{
+            "page_type": {
+              "type": "string",
+              "example":"privacy-policy/terms-of-service/about-us"
+            },
+            "title": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string",
+              "example":"Y-m-d"
+            },
+            "content": {
+              "type": "string"
+            },
+            "language": {
+              "type": "string",
+              "example":"en/ko"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required":["page_type","title","date","content"],
+          "properties":{
+            "page_type": {
+              "type": "string",
+              "example":"privacy-policy/terms-of-service/about-us"
+            },
+            "title": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string",
+              "example":"Y-m-d"
+            },
+            "content": {
+              "type": "string"
+            },
+            "language": {
+              "type": "string",
+              "example":"en/ko"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

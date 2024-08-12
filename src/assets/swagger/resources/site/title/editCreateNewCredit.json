@@ -1,0 +1,44 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["title_id","site_language","credit_type","cast_name","job_title","is_guest"],
+          "type": "object",
+          "properties":{
+            "title_id": {
+              "type": "integer"
+            },
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "site_language": {
+              "type": "string"
+            },
+            "credit_type": {
+              "type": "string",
+              "example":"cast/crew"
+            },
+            "cast_name": {
+              "type": "string"
+            },
+            "job_title": {
+              "type": "string"
+            },
+            "character_name": {
+              "type": "string"
+            },
+            "is_guest": {
+              "type": "integer",
+              "example":0
+            },
+            "image": {
+              "type": "string",
+              "format":"binary"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

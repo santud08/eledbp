@@ -1,0 +1,138 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "properties":{
+            "search_type": {
+              "type": "string",
+              "example":"movie/tv/webtoons/people"
+            },
+            "search_title": {
+              "type": "string",
+              "example":""
+            },
+            "search_email": {
+              "type": "string",
+              "format":"email",
+              "example":""
+            },
+            "content_id": {
+              "type": "integer",
+              "example":""
+            },
+            "search_title_status": {
+              "type": "string",
+              "example":"returning_series/planned/pilot/in_production/ended/canceled/rumored/post_production/released/ongoing/hiatus/completed"
+            },
+            "search_editor_name": {
+              "type": "string",
+              "example":""
+            }, 
+            "search_date_type": {
+              "type": "string",
+              "example":"modified_date/registration_date"
+            },
+            "search_start_date": {
+              "type": "string",
+              "format":"date",
+              "example":"in Y-m-d format"
+            },
+            "search_end_date": {
+              "type": "string",
+              "format":"date",
+              "example":"in Y-m-d format"
+            },
+            "search_operation": {
+              "type": "string",
+              "example":"allocate/working/done/approve"
+            },
+            "sort_order": {
+              "type": "string",
+              "example":"desc/asc"
+            },
+            "sort_by": {
+              "type": "string",
+              "example":""
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties":{
+            "search_type": {
+                "type": "string",
+                "example":"movie/tv/webtoons/people"
+            },
+            "search_title": {
+                "type": "string",
+                "example":""
+            },
+            "search_email": {
+                "type": "string",
+                "format":"email",
+                "example":""
+            },
+            "content_id": {
+              "type": "integer",
+              "example":""
+            },
+            "search_title_status": {
+                "type": "string",
+                "example":"returning_series/planned/pilot/in_production/ended/canceled/rumored/post_production/released/ongoing/hiatus/completed"
+            },
+            "search_editor_name": {
+                "type": "string",
+                "example":""
+            },
+            "search_date_type": {
+              "type": "string",
+              "example":"modified_date/registration_date"
+            },
+            "search_start_date": {
+                "type": "string",
+                "format":"date",
+                "example":"in Y-m-d format"
+            },
+            "search_end_date": {
+                "type": "string",
+                "format":"date",
+                "example":"in Y-m-d format"
+            },
+            "search_operation": {
+                "type": "string",
+                "example":"allocate/working/done/approve"
+            },
+            "sort_order": {
+                "type": "string",
+                "example":"desc/asc"
+            },
+            "sort_by": {
+                "type": "string",
+                "example":""
+            },
+            "page": {
+                "type": "integer",
+                "example":1
+            },
+            "limit": {
+                "type": "integer",
+                "example":10
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

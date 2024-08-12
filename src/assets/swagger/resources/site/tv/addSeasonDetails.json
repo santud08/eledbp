@@ -1,0 +1,84 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["draft_request_id","season_no","season_name","site_language"],
+          "type": "object",
+          "properties":{
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "season_no": {
+              "type": "integer"
+            },
+            "season_name": {
+              "type": "string"
+            },
+            "site_language": {
+              "type": "string"
+            },
+            "draft_season_id": {
+              "type": "integer"
+            },
+            "release_date": {
+              "type": "string",
+              "format":"date",
+              "example":"Y-m-d"
+            },
+            "release_date_to": {
+              "type": "string",
+              "format":"date",
+              "example":"Y-m-d"
+            },
+            "episode_count": {
+              "type": "integer"
+            },
+            "summary": {
+              "type": "string"
+            },
+            "aka": {
+              "type": "string"
+            },
+            "search_keyword": {
+              "type": "string",
+              "example":"value should be comma separated if multiple"
+            },
+            "news_search_keyword": {
+              "type": "string",
+              "example":"value should be comma separated if multiple"
+            },
+            "watch_on_stream[]": {
+              "type": "array",
+              "items":{"type": "object","properties":{"ott_provider_id":{"type":"integer"},"ott_provider_provided_id":{"type":"string"}}},
+              "example":[{"ott_provider_id":1,"ott_provider_provided_id":"1100"}]
+            },
+            "watch_on_rent[]": {
+              "type": "array",
+              "items":{"type": "object","properties":{"ott_provider_id":{"type":"integer"},"ott_provider_provided_id":{"type":"string"}}},
+              "example": [{"ott_provider_id":1,"ott_provider_provided_id":"1100"}]
+            },
+            "watch_on_buy[]": {
+              "type": "array",
+              "items":{"type": "object","properties":{"ott_provider_id":{"type":"integer"},"ott_provider_provided_id":{"type":"string"}}},
+              "example":[{"ott_provider_id":1,"ott_provider_provided_id":"1100"}]
+            },
+            "channel[]": {
+              "type": "array",
+              "items":{"type":"integer"},
+              "example":[4]
+            },
+            "image_action": {
+              "type": "string",
+              "example":"send value unchanged when the file is not update otherwise send blank"
+            },
+            "image": {
+              "type": "string",
+              "format":"binary"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

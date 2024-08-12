@@ -1,0 +1,62 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+        "application/x-www-form-urlencoded": {
+            "schema": {
+                "required": ["id","award_id"],
+                "type": "object",
+                "properties":{
+                    "id": {
+                        "type": "integer",
+                        "example":1
+                    },
+                    "award_id": {
+                        "type": "integer",
+                        "example":1
+                    },
+                    "division_name_ko": {
+                        "type": "string",
+                        "example":""
+                    },
+                    "division_name_en": {
+                        "type": "string",
+                        "example":""
+                    },
+                    "status": {
+                        "type": "string",
+                        "example":"active/inactive"
+                    }
+                }
+            }
+        },
+        "application/json": {
+            "schema": {
+                "required": ["id","award_id"],
+                "type": "object",
+                "properties":{
+                    "id": {
+                        "type": "integer",
+                        "example":1
+                    },
+                    "award_id": {
+                        "type": "integer",
+                        "example":1
+                    },
+                    "division_name_ko": {
+                        "type": "string",
+                        "example":""
+                    },
+                    "division_name_en": {
+                        "type": "string",
+                        "example":""
+                    },
+                    "status": {
+                        "type": "string",
+                        "example":"active/inactive"
+                    }
+                }
+            }
+        }   
+    },
+    "required": true
+}

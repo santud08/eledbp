@@ -1,0 +1,36 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "required":["list_type","feed_url"],
+          "properties":{
+            "list_type": {
+              "type": "string",
+              "example":"movie/tv_show/webtoon"
+            },
+            "feed_url": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required":["list_type","feed_url"],
+          "properties":{
+            "list_type": {
+              "type": "string",
+              "example":"movie/tv_show/webtoon"
+            },
+            "feed_url": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

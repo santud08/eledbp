@@ -1,0 +1,82 @@
+{
+    "title_id":{
+        "name": "title_id",
+        "in":"query",
+        "required":true,
+        "description": "title id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "request_id":{
+        "name": "request_id",
+        "in":"query",
+        "required":false,
+        "description": "request id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "season_id":{
+        "name": "season_id",
+        "in":"query",
+        "required":false,
+        "description": "season id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "draft_season_id":{
+        "name": "draft_season_id",
+        "in":"query",
+        "required":false,
+        "description": "draft season id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "draft_episode_id":{
+        "name": "draft_episode_id",
+        "in":"query",
+        "required":false,
+        "description": "draft episode id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "episode_id":{
+        "name": "episode_id",
+        "in":"query",
+        "required":false,
+        "description": "episode id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "episode_number":{
+        "name": "episode_number",
+        "in":"query",
+        "required":false,
+        "description": "episode number  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "language":{
+        "name": "language",
+        "in":"query",
+        "required":true,
+        "description": "language  which details you want",
+        "schema": {
+          "type": "string",
+          "example":"en"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "nominee_id":{
+       "name": "nominee_id",
+       "in":"query",
+       "required":true,
+       "description": "nominee_id which nominee details you want",
+       "schema": {
+           "type": "integer"
+       }
+   },
+   "award_id":{
+       "name": "award_id",
+       "in":"query",
+       "required":true,
+       "description": "award id which details you want",
+       "schema": {
+           "type": "integer"
+       }
+   },
+   "round_id":{
+       "name": "round_id",
+       "in":"query",
+       "required":true,
+       "description": "round id which details you want",
+       "schema": {
+           "type": "integer"
+       }
+   }
+  
+}

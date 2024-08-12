@@ -1,0 +1,13 @@
+{
+    "date":{
+        "name": "date",
+        "in":"query",
+        "required":false,
+        "description": "todays date for search",
+        "schema": {
+            "type": "string",
+            "format":"date",
+            "default": "2023-04-20"
+        }
+    }
+}

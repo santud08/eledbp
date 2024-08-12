@@ -1,0 +1,70 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["title_type", "search_type","search_text","sort_by","page","limit"],
+          "type": "object",
+          "properties": {
+            "title_type": {
+              "type": "string",
+              "example":"valid input are movie,tv,webtoons"
+            
+            },
+            "search_type": {
+              "type": "string",
+              "example":"valid input are title,tmdb_id,kobis_id,imdb_id,tiving_id,odk_id,naver_id,kakao_id"
+            },
+            "search_text": {
+              "type": "string"
+            },
+            "sort_by": {
+              "type": "string",
+              "example":"valid input are newest,oldest"
+            },
+            "page": {
+              "type": "integer",
+              "example":"1"
+            },
+            "limit": {
+              "type": "integer",
+              "example":"10"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["title_type", "search_type","search_text","sort_by","page","limit"],
+          "type": "object",
+          "properties": {
+            "title_type": {
+              "type": "string",
+              "example":"valid input are movie,tv,webtoons"
+            
+            },
+            "search_type": {
+              "type": "string",
+              "example":"valid input are title,tmdb_id,kobis_id,imdb_id,tiving_id,odk_id,naver_id,kakao_id"
+            },
+            "search_text": {
+              "type": "string"
+            },
+            "sort_by": {
+              "type": "string",
+              "example":"valid input are newest,oldest"
+            },
+            "page": {
+              "type": "integer",
+              "example":"1"
+            },
+            "limit": {
+              "type": "integer",
+              "example":"10"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

@@ -1,0 +1,11 @@
+{
+    "category_name":{
+        "name": "category_name",
+        "in":"query",
+        "required":false,
+        "description": "category name  which details you want",
+        "schema": {
+          "type": "string"
+        }
+    }
+}

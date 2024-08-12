@@ -1,0 +1,13 @@
+{
+    "section": {
+        "name": "section",
+        "in":"query",
+        "required":true,
+        "description": "section  which section details you want",
+        "schema": {
+            "type": "string",
+            "example":"community_report/user_feedback_report/db_content_report",
+            "default":""
+        }
+    }
+}

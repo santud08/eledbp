@@ -1,0 +1,48 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["draft_request_id","draft_season_id","site_language"],
+          "type": "object",
+          "properties":{
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "draft_season_id": {
+              "type": "integer"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en"
+            },
+            "search_text": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["draft_request_id","draft_season_id","site_language"],
+          "type": "object",
+          "properties":{
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "draft_season_id": {
+              "type": "integer"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en"
+            },
+            "search_text": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

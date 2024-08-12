@@ -1,0 +1,23 @@
+{
+    "request_id":{
+        "name": "request_id",
+        "in":"query",
+        "required":false,
+        "description": "request_id for which details you want",
+        "schema": {
+          "type": "integer",
+          "default": ""
+        }
+    },
+    "site_language":{
+        "name": "site_language",
+        "in":"query",
+        "required":true,
+        "description": "site_language for which details you want",
+        "schema": {
+          "type": "string",
+          "example":"en/ko",
+          "default": "en"
+        }
+    }
+}

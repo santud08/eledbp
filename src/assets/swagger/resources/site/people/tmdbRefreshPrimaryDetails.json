@@ -1,0 +1,29 @@
+{
+    "people_id":{
+        "name": "people_id",
+        "in":"query",
+        "required":true,
+        "description": "people id  which details you want",
+        "schema": {
+          "type": "integer"
+        }
+    },
+    "tmdb_id":{
+        "name": "tmdb_id",
+        "in":"query",
+        "required":true,
+        "description": "tmdb id  which details you want",
+        "schema": {
+          "type": "integer"
+        }
+    },
+    "site_language":{
+        "name": "site_language",
+        "in":"query",
+        "required":true,
+        "description": "site language  which details you want",
+        "schema": {
+          "type": "string"
+        }
+    }
+}

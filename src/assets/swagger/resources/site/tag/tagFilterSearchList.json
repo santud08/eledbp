@@ -1,0 +1,31 @@
+{
+    "category_id":{
+        "name": "category_id",
+        "in":"query",
+        "required":false,
+        "description": "category id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "subcategory_id":{
+        "name": "subcategory_id",
+        "in":"query",
+        "required":false,
+        "description": "sub category id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "search_text":{
+        "name": "search_text",
+        "in":"query",
+        "required":false,
+        "description": "search text  which details you want",
+        "schema": {
+          "type": "string"
+        }
+    }
+}

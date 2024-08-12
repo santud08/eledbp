@@ -1,0 +1,42 @@
+{
+    "title_id":{
+        "name": "title_id",
+        "in":"query",
+        "required":true,
+        "description": "title_id for get the details",
+        "schema": {
+          "type": "integer",
+          "default": ""
+        }
+    },
+    "site_language":{
+        "name": "site_language",
+        "in":"query",
+        "required":true,
+        "description": "site_language for get the details",
+        "schema": {
+          "type": "string",
+          "default": "en"
+        }
+    },
+    "tmdb_id":{
+        "name": "tmdb_id",
+        "in":"query",
+        "required":true,
+        "description": "tmdb_id for get the details",
+        "schema": {
+          "type": "integer",
+          "default": ""
+        }
+    },
+    "title_type":{
+        "name": "title_type",
+        "in":"query",
+        "required":true,
+        "description": "title_type for the details",
+        "schema": {
+          "type": "string",
+          "default": "movie/tv"
+        }
+    }
+}

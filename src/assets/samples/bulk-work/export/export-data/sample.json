@@ -1,0 +1,970 @@
+{
+  "data": [
+    {
+      "type": "tv",
+      "id": "631842",
+      "imdb_id": "tt0111161",
+      "tving_id": "tt0111161",
+      "odk_id": "20190001",
+      "tmdb_id": "631842",
+      "kobis_id": "20190001",
+      "official_site": "",
+      "status": "In Production",
+      "release_date": "2021-08-11",
+      "release_date_to": "2021-08-13",
+      "rating": "15",
+      "runtime": "100",
+      "footfalls": "",
+      "certification": "15",
+      "language": "ko",
+      "aka": "Knock at the Cabin",
+      "name": {"en":"Summer's Desire","ko":"Summer's Desire"},
+      "summary": {"en":"Summer's Desire","ko":"Summer's Desire"},
+      "original_work":{
+        "en":[
+          {
+            "id":1,
+            "type": "Game",
+            "original_title": "Name one",
+            "original_artist": "artist"
+          },
+          {
+            "id":2,
+            "type": "Advertisement",
+            "original_title": "Name two",
+            "original_artist": "artist"
+          }
+        ],
+        "ko":[
+          {
+            "id":1,
+            "type": "Game",
+            "original_title": "Name one",
+            "original_artist": "artist"
+          },
+          {
+            "id":2,
+            "type": "Advertisement",
+            "original_title": "Name two",
+            "original_artist": "artist"
+          }
+        ]
+      },
+      "search_keywords": [
+        {
+          "id": "1",
+          "keyword": "Knock at the Cabin"
+        },
+        {
+          "id": "2",
+          "keyword": "Knock at the Cabin"
+        }
+      ],
+      "country": [
+        {
+          "id": 1,
+          "country": "United State"
+        },
+        {
+          "id": 2,
+          "country": "Andorra"
+        }
+      ],
+      "connection": [
+        {
+          "id": 1,
+          "name": "Name one",
+          "image":""
+        },
+        {
+          "id": 2,
+          "name": "Name one",
+          "image":""
+        }
+      ],
+      "tag_details": [
+        {
+          "category_id": 1,
+          "category_name": "genre",
+          "type": "genre",
+          "tags": [
+            {
+              "id": 12,
+              "tag_id": 1,
+              "score": 1,
+              "display_name": "Action_EXGR001"
+            }
+          ]
+        },
+        {
+          "category_id": 3,
+          "category_name": "subject",
+          "type": "",
+          "tags": [
+            
+          ]
+        }
+      ],
+      "season_details": [
+        {
+          "id":5,
+          "season_number": 1,
+          "season_name": {"en":"season","ko":"season"},
+          "summary": {"en":"season","ko":"season"},
+          "release_date":"2021-08-11",
+          "episode_count": 2,
+          "aka": "season",
+          "poster_image": "",
+          "search_keywords": [
+            {
+              "id": "1",
+              "keyword": "Knock at the Cabin"
+            },
+            {
+              "id": "2",
+              "keyword": "Knock at the Cabin"
+            }
+          ],
+          "news_keywords": [
+            {
+              "id": "1",
+              "keyword": "Knock at the Cabin"
+            },
+            {
+              "id": "2",
+              "keyword": "Knock at the Cabin"
+            }
+          ],
+          "watch": {
+            "stream": [
+              {
+                "provider_id": 1,
+                "provider_name": "Netflix",
+                "url": "",
+                "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+              },
+              {
+                "id": 2,
+                "provider_name": "Netflix",
+                "url": "",
+                "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+              }
+            ],
+            "rent": [
+              {
+                "provider_id": 1,
+                "provider_name": "Netflix",
+                "url": "",
+                "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+              },
+              {
+               "provider_id": 1,
+                "provider_name": "Netflix",
+                "url": "",
+                "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+              }
+            ],
+            "buy": [
+              {
+                "provider_id": 1,
+                "provider_name": "Netflix",
+                "url": "",
+                "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+              },
+              {
+                "provider_id": 1,
+                "provider_name": "Netflix",
+                "url": "",
+                "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+              }
+            ]
+          },
+          "channels":[
+            {
+            "id": 1,
+            "network_name": "Fuji TV"
+            },
+            {
+            "id": 2,
+            "network_name": "Bell TV"
+            }
+          ],
+          "episode_details": [
+            {
+              "id":1,
+              "episode_title": {"en":"Kamino Lost (1)","ko":"Kamino Lost (1)"},
+              "episode_summary":{"en": "The Bad Batch find themselves in unexpected territory in this thrilling finale.","ko": "The Bad Batch find themselves in unexpected territory in this thrilling finale."},
+              "episode_number": 16,
+              "episode_date": "2021-08-11",
+              "episode_image": "https://image.tmdb.org/t/p/original/fjf9ELXvscgUCE2cR9tSrbXyA6H.jpg"
+            },
+            {
+              "id":2,
+              "episode_title": {"en":"Kamino Lost (2)","ko":"Kamino Lost (2)"},
+              "episode_summary": {"en":"The Bad Batch find themselves in unexpected territory in this thrilling finale.","ko":"The Bad Batch find themselves in unexpected territory in this thrilling finale."},
+              "episode_number": 12,
+              "episode_date": "2021-08-13",
+              "episode_image": "https://image.tmdb.org/t/p/original/fjf9ELXvscgUCE2cR9tSrbXyA6H.jpg"
+            }
+          ],
+          "media_details": {
+            "video": [
+              {
+                "id":1,
+                "video_title": "Star Wars",
+                "video_url": "https://youtu.be/YB9DIxdB198",
+                "is_official_trailer": "y"
+              },
+              {
+                "id":2,
+                "video_title": "Star Wars",
+                "video_url": "https://youtu.be/YB9DIxdB198",
+                "is_official_trailer": "y"
+              }
+            ],
+            "images": [
+              {
+                  "id":2,
+                  "originalname": "sample-edited.jpg",
+                  "filename": "1666003461373-0-17384.jpg",
+                  "path": "1666003461373-0-17384.jpg",
+                  "size": 219462,
+                  "mime_type": "image/jpeg"
+              },
+              {
+                  "id":4,
+                  "originalname": "sample-edited.jpg",
+                  "filename": "1666003461373-0-17384.jpg",
+                  "path": "1666003461373-0-17384.jpg",
+                  "size": 219462,
+                  "mime_type": "image/jpeg"
+              }
+            ],
+            "bg_images": [
+              {
+                  "id":2,
+                  "originalname": "sample-edited.jpg",
+                  "filename": "1666003461373-0-17384.jpg",
+                  "path": "1666003461373-0-17384.jpg",
+                  "size": 219462,
+                  "mime_type": "image/jpeg"
+              },
+              {
+                  "id":4,
+                  "originalname": "sample-edited.jpg",
+                  "filename": "1666003461373-0-17384.jpg",
+                  "path": "1666003461373-0-17384.jpg",
+                  "size": 219462,
+                  "mime_type": "image/jpeg"
+              }
+            ],
+            "poster_images": [
+              {
+                  "id":2,
+                  "originalname": "sample-edited.jpg",
+                  "filename": "1666003461373-0-17384.jpg",
+                  "path": "1666003461373-0-17384.jpg",
+                  "size": 219462,
+                  "mime_type": "image/jpeg"
+              },
+              {
+                  "id":3,
+                  "originalname": "sample-edited.jpg",
+                  "filename": "1666003461373-0-17384.jpg",
+                  "path": "1666003461373-0-17384.jpg",
+                  "size": 219462,
+                  "mime_type": "image/jpeg"
+              }
+            ]
+          },
+          "credit_details": {
+            "cast": [
+              {
+                "people_id": 4614,
+                "tmdb_id": "631842",
+                "kobis_id": "20190001",
+                "cast_name": "Lee Seo-jin",
+                "character_name": "Self - CEO/Boss Lee",
+                "job": "Acting",
+                "is_guest": "",
+                "poster": "https://image.tmdb.org/t/p/original/s5KginY3G9ZmqsgiOKmx9mto6Vx.jpg"
+              },
+              {
+                "people_id": 46,
+                "tmdb_id": "631842",
+                "kobis_id": "20190001",
+                "cast_name": "Lee Seo",
+                "character_name": "Self - CEO/Boss Lee",
+                "job": "Directing",
+                "is_guest": "",
+                "poster": "https://image.tmdb.org/t/p/original/s5KginY3G9ZmqsgiOKmx9mto6Vx.jpg"
+              }
+            ],
+            "crew": [
+              {
+                "people_id": 4614,
+                "tmdb_id": "631842",
+                "kobis_id": "20190001",
+                "crew_name": "Lee Seo-jin",
+                "job": "Acting",
+                "poster": "https://image.tmdb.org/t/p/original/s5KginY3G9ZmqsgiOKmx9mto6Vx.jpg"
+              },
+              {
+                "people_id": 46,
+                "tmdb_id": "631842",
+                "kobis_id": "20190001",
+                "crew_name": "Lee Seo",
+                "job": "Directing",
+                "poster": "https://image.tmdb.org/t/p/original/s5KginY3G9ZmqsgiOKmx9mto6Vx.jpg"
+              }
+            ]
+          }
+        },
+        {
+          "id":6,
+          "season_number": 1,
+          "season_name": {"en":"season","ko":"season"},
+          "summary": {"en":"season","ko":"season"},
+          "release_date":"2021-08-11",
+          "episode_count": 2,
+          "aka": "season",
+          "poster_image": "",
+          "search_keywords": [
+            {
+              "id": "1",
+              "keyword": "Knock at the Cabin"
+            },
+            {
+              "id": "2",
+              "keyword": "Knock at the Cabin"
+            }
+          ],
+          "news_keywords": [
+            {
+              "id": "1",
+              "keyword": "Knock at the Cabin"
+            },
+            {
+              "id": "2",
+              "keyword": "Knock at the Cabin"
+            }
+          ],
+          "watch": {
+            "stream": [
+              {
+                "provider_id": 1,
+                "provider_name": "Netflix",
+                "url": "",
+                "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+              },
+              {
+                "id": 2,
+                "provider_name": "Netflix",
+                "url": "",
+                "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+              }
+            ],
+            "rent": [
+              {
+                "provider_id": 1,
+                "provider_name": "Netflix",
+                "url": "",
+                "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+              },
+              {
+               "provider_id": 1,
+                "provider_name": "Netflix",
+                "url": "",
+                "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+              }
+            ],
+            "buy": [
+              {
+                "provider_id": 1,
+                "provider_name": "Netflix",
+                "url": "",
+                "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+              },
+              {
+                "provider_id": 1,
+                "provider_name": "Netflix",
+                "url": "",
+                "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+              }
+            ]
+          },
+          "channels":[
+            {
+            "id": 1,
+            "network_name": "Fuji TV"
+            },
+            {
+            "id": 2,
+            "network_name": "Bell TV"
+            }
+          ],
+          "episode_details": [
+            {
+              "id":2,
+              "episode_title": {"en":"Kamino Lost (1)","ko":"Kamino Lost (1)"},
+              "episode_summary": {"en":"The Bad Batch find themselves in unexpected territory in this thrilling finale.","ko":"The Bad Batch find themselves in unexpected territory in this thrilling finale."},
+              "episode_number": 16,
+              "episode_date": "2021-08-11",
+              "episode_image": "https://image.tmdb.org/t/p/original/fjf9ELXvscgUCE2cR9tSrbXyA6H.jpg"
+            },
+            {
+              "id":2,
+              "episode_title": {"en":"Kamino Lost (2)","ko":"Kamino Lost (2)"},
+              "episode_summary": {"en":"The Bad Batch find themselves in unexpected territory in this thrilling finale.","ko":"The Bad Batch find themselves in unexpected territory in this thrilling finale."},
+              "episode_number": 12,
+              "episode_date": "2021-08-13",
+              "episode_image": "https://image.tmdb.org/t/p/original/fjf9ELXvscgUCE2cR9tSrbXyA6H.jpg"
+            }
+          ],
+          "media_details": {
+            "video": [
+              {
+                "video_title": "Star Wars",
+                "video_url": "https://youtu.be/YB9DIxdB198",
+                "is_official_trailer": "y"
+              },
+              {
+                "video_title": "Star Wars",
+                "video_url": "https://youtu.be/YB9DIxdB198",
+                "is_official_trailer": "y"
+              }
+            ],
+            "images": [
+              {
+                  "id":2,
+                  "originalname": "sample-edited.jpg",
+                  "filename": "1666003461373-0-17384.jpg",
+                  "path": "1666003461373-0-17384.jpg",
+                  "size": 219462,
+                  "mime_type": "image/jpeg"
+              },
+              {
+                  "id":5,
+                  "originalname": "sample-edited.jpg",
+                  "filename": "1666003461373-0-17384.jpg",
+                  "path": "1666003461373-0-17384.jpg",
+                  "size": 219462,
+                  "mime_type": "image/jpeg"
+              }
+            ],
+            "bg_images": [
+              {
+                  "id":2,
+                  "originalname": "sample-edited.jpg",
+                  "filename": "1666003461373-0-17384.jpg",
+                  "path": "1666003461373-0-17384.jpg",
+                  "size": 219462,
+                  "mime_type": "image/jpeg"
+              },
+              {
+                  "id":4,
+                  "originalname": "sample-edited.jpg",
+                  "filename": "1666003461373-0-17384.jpg",
+                  "path": "1666003461373-0-17384.jpg",
+                  "size": 219462,
+                  "mime_type": "image/jpeg"
+              }
+            ],
+            "poster_images": [
+              {
+                  "id":1,
+                  "originalname": "sample-edited.jpg",
+                  "filename": "1666003461373-0-17384.jpg",
+                  "path": "1666003461373-0-17384.jpg",
+                  "size": 219462,
+                  "mime_type": "image/jpeg"
+              },
+              {
+                  "id":5,
+                  "originalname": "sample-edited.jpg",
+                  "filename": "1666003461373-0-17384.jpg",
+                  "path": "1666003461373-0-17384.jpg",
+                  "size": 219462,
+                  "mime_type": "image/jpeg"
+              }
+            ]
+          },
+          "credit_details": {
+            "cast": [
+              {
+                "people_id": 4614,
+                "tmdb_id": "631842",
+                "kobis_id": "20190001",
+                "cast_name": "Lee Seo-jin",
+                "character_name": "Self - CEO/Boss Lee",
+                "job": "Acting",
+                "is_guest": "",
+                "poster": "https://image.tmdb.org/t/p/original/s5KginY3G9ZmqsgiOKmx9mto6Vx.jpg"
+              },
+              {
+                "people_id": 46,
+                "tmdb_id": "631842",
+                "kobis_id": "20190001",
+                "cast_name": "Lee Seo",
+                "character_name": "Self - CEO/Boss Lee",
+                "job": "Directing",
+                "is_guest": "",
+                "poster": "https://image.tmdb.org/t/p/original/s5KginY3G9ZmqsgiOKmx9mto6Vx.jpg"
+              }
+            ],
+            "crew": [
+              {
+                "people_id": 4614,
+                "tmdb_id": "631842",
+                "kobis_id": "20190001",
+                "crew_name": "Lee Seo-jin",
+                "job": "Acting",
+                "poster": "https://image.tmdb.org/t/p/original/s5KginY3G9ZmqsgiOKmx9mto6Vx.jpg"
+              },
+              {
+                "people_id": 46,
+                "tmdb_id": "631842",
+                "kobis_id": "20190001",
+                "crew_name": "Lee Seo",
+                "job": "Directing",
+                "poster": "https://image.tmdb.org/t/p/original/s5KginY3G9ZmqsgiOKmx9mto6Vx.jpg"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "35",
+      "imdb_id": "tt0111161",
+      "tving_id": "tt0111161",
+      "odk_id": "20190001",
+      "tmdb_id": "631842",
+      "kobis_id": "20190001",
+      "official_site": "",
+      "status": "Planned",
+      "release_date": "2021-08-11",
+      "release_date_to": "2021-08-13",
+      "is_rerelease": "y",
+      "rerelease_details": [
+          {
+            "id": "1",
+            "date": "2021-08-13"
+          },
+          {
+            "id": "2",
+            "date": "2021-08-13"
+          }
+      ],
+      "rating": "15",
+      "runtime": "100",
+      "footfalls": "",
+      "certification": "15",
+      "language": "ko",
+      "aka": "Knock at the Cabin",
+      "name": {"en":"Summer's Desire","ko":"Summer's Desire"},
+      "summary": {"en":"","ko":""},
+      "plot_summary": {"en":"","ko":""},
+      "original_work":{
+        "en":[
+          {
+            "id":1,
+            "type": "Game",
+            "original_title": "Name one",
+            "original_artist": "artist"
+          },
+          {
+            "id":2,
+            "type": "Advertisement",
+            "original_title": "Name two",
+            "original_artist": "artist"
+          }
+        ],
+        "ko":[
+          {
+            "id":1,
+            "type": "Game",
+            "original_title": "Name one",
+            "original_artist": "artist"
+          },
+          {
+            "id":2,
+            "type": "Advertisement",
+            "original_title": "Name two",
+            "original_artist": "artist"
+          }
+        ]
+      },
+      "search_keywords": [
+        {
+          "id": "1",
+          "keyword": "Knock at the Cabin"
+        },
+        {
+          "id": "2",
+          "keyword": "Knock at the Cabin"
+        }
+      ],
+      "news_keywords": [
+        {
+          "id": "1",
+          "keyword": "Knock at the Cabin"
+        },
+        {
+          "id": "2",
+          "keyword": "Knock at the Cabin"
+        }
+      ],
+      "country": [
+        {
+          "id": "1",
+          "country": "United State"
+        },
+        {
+          "id": "2",
+          "country": "Andorra"
+        }
+      ],
+      "watch": {
+        "stream": [
+          {
+            "provider_id": 1,
+            "provider_name": "Netflix",
+            "url": "",
+            "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+          },
+          {
+            "id": 2,
+            "provider_name": "Netflix",
+            "url": "",
+            "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+          }
+        ],
+        "rent": [
+          {
+            "provider_id": 1,
+            "provider_name": "Netflix",
+            "url": "",
+            "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+          },
+          {
+           "provider_id": 1,
+            "provider_name": "Netflix",
+            "url": "",
+            "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+          }
+        ],
+        "buy": [
+          {
+            "provider_id": 1,
+            "provider_name": "Netflix",
+            "url": "",
+            "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+          },
+          {
+            "provider_id": 1,
+            "provider_name": "Netflix",
+            "url": "",
+            "icon": "http://elvndb-api.dvconsulting.org/api/v1/public/images/ott/t2yyOv40HZeVlLjYsCsPHnWLk4W.jpg"
+          }
+        ]
+      },
+      "connection": [
+        {
+          "id": 1,
+          "name": "Name one",
+          "image":""
+        },
+        {
+          "id": 2,
+          "name": "Name two",
+          "image":""
+        }
+      ],
+      "series": [
+        {
+          "id": 1,
+          "name": "Name one",
+          "image":""
+        },
+        {
+          "id": 2,
+          "name": "Name two",
+          "image":""
+        }
+      ],
+      "media_details": {
+        "video": [
+          {
+            "id":2,
+            "video_title": "Star Wars",
+            "video_url": "https://youtu.be/YB9DIxdB198",
+            "is_official_trailer": "y"
+          },
+          {
+            "id":3,
+            "video_title": "Star Wars",
+            "video_url": "https://youtu.be/YB9DIxdB198",
+            "is_official_trailer": "y"
+          }
+        ],
+        "images": [
+          {
+            "id":1,
+            "originalname": "sample-edited.jpg",
+            "filename": "1666003461373-0-17384.jpg",
+            "path": "1666003461373-0-17384.jpg",
+            "size": 219462,
+            "mime_type": "image/jpeg"
+          },
+          {
+            "id":2,
+            "originalname": "sample-edited.jpg",
+            "filename": "1666003461373-0-17384.jpg",
+            "path": "1666003461373-0-17384.jpg",
+            "size": 219462,
+            "mime_type": "image/jpeg"
+          }
+        ],
+        "bg_images": [
+          {
+            "id":1,
+            "originalname": "sample-edited.jpg",
+            "filename": "1666003461373-0-17384.jpg",
+            "path": "1666003461373-0-17384.jpg",
+            "size": 219462,
+            "mime_type": "image/jpeg"
+          },
+          {
+            "id":2,
+            "originalname": "sample-edited.jpg",
+            "filename": "1666003461373-0-17384.jpg",
+            "path": "1666003461373-0-17384.jpg",
+            "size": 219462,
+            "mime_type": "image/jpeg"
+          }
+        ],
+        "poster_images": [
+          {
+            "id":1,
+            "originalname": "sample-edited.jpg",
+            "filename": "1666003461373-0-17384.jpg",
+            "path": "1666003461373-0-17384.jpg",
+            "size": 219462,
+            "mime_type": "image/jpeg"
+          },
+          {
+            "id":2,
+            "originalname": "sample-edited.jpg",
+            "filename": "1666003461373-0-17384.jpg",
+            "path": "1666003461373-0-17384.jpg",
+            "size": 219462,
+            "mime_type": "image/jpeg"
+          }
+        ]
+      },
+      "credit_details": {
+        "cast": [
+          {
+            "people_id": 4614,
+            "tmdb_id": "631842",
+            "kobis_id": "20190001",
+            "cast_name": "Lee Seo-jin",
+            "character_name": "Self - CEO/Boss Lee",
+            "job": "Acting",
+            "is_guest": "",
+            "poster": "https://image.tmdb.org/t/p/original/s5KginY3G9ZmqsgiOKmx9mto6Vx.jpg"
+          },
+          {
+            "people_id": 46,
+            "tmdb_id": "631842",
+            "kobis_id": "20190001",
+            "cast_name": "Lee Seo",
+            "character_name": "Self - CEO/Boss Lee",
+            "job": "Directing",
+            "is_guest": "",
+            "poster": "https://image.tmdb.org/t/p/original/s5KginY3G9ZmqsgiOKmx9mto6Vx.jpg"
+          }
+        ],
+        "crew": [
+          {
+            "people_id": 4614,
+            "tmdb_id": "631842",
+            "kobis_id": "20190001",
+            "crew_name": "Lee Seo-jin",
+            "job": "Acting",
+            "poster": "https://image.tmdb.org/t/p/original/s5KginY3G9ZmqsgiOKmx9mto6Vx.jpg"
+          },
+          {
+            "people_id": 46,
+            "tmdb_id": "631842",
+            "kobis_id": "20190001",
+            "crew_name": "Lee Seo",
+            "job": "Directing",
+            "poster": "https://image.tmdb.org/t/p/original/s5KginY3G9ZmqsgiOKmx9mto6Vx.jpg"
+          }
+        ]
+      },
+      "tag_details": [
+        {
+          "category_id": 1,
+          "category_name": "genre",
+          "type": "genre",
+          "tags": [
+            {
+              "id": 12,
+              "tag_id": 1,
+              "score": 1,
+              "display_name": "Action_EXGR001"
+            }
+          ]
+        },
+        {
+          "category_id": 3,
+          "category_name": "subject",
+          "type": "",
+          "tags": [
+            {
+              "id": 12,
+              "tag_id": 1,
+              "score": 1,
+              "display_name": "Action_EXGR001"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "people",
+      "id": "35",
+      "gender": "male",
+      "birth_date": "1979-08-11",
+      "death_date": "2018-08-11",
+      "imdb_id": "tt0111161",
+      "tving_id": "tt0111161",
+      "odk_id": "20190001",
+      "tmdb_id": "631842",
+      "kobis_id": "20190001",
+      "official_site": "",
+      "social_links": {
+        "facebook": "",
+        "twitter": "",
+        "instagram": ""
+      },
+      "name": {"en":"Summer's Desire","ko":"Summer's Desire"},
+      "summary": {"en":"","ko":""},
+      "aka": "Knock at the Cabin",
+      "job": [
+        {
+          "id": "1",
+          "job": "job name"
+        },
+        {
+          "id": "2",
+          "job": "job name"
+        }
+      ],
+      "search_keywords": [
+        {
+          "id": "1",
+          "keyword": "Knock at the Cabin"
+        },
+        {
+          "id": "2",
+          "keyword": "Knock at the Cabin"
+        }
+      ],
+      "news_keywords": [
+        {
+          "id": "1",
+          "keyword": "Knock at the Cabin"
+        },
+        {
+          "id": "2",
+          "keyword": "Knock at the Cabin"
+        }
+      ],
+      "country": [
+        {
+          "id": "1",
+          "country": "United State"
+        },
+        {
+          "id": "2",
+          "country": "Andorra"
+        }
+      ],
+      "media_details": {
+        "video": [
+          {
+            "id":1,
+            "video_title": "Star Wars",
+            "video_url": "https://youtu.be/YB9DIxdB198",
+            "is_official_trailer": "y"
+          },
+          {
+            "id":1,
+            "video_title": "Star Wars",
+            "video_url": "https://youtu.be/YB9DIxdB198",
+            "is_official_trailer": "y"
+          }
+        ],
+        "images": [
+          {
+              "id":1,
+              "originalname": "sample-edited.jpg",
+              "filename": "1666003461373-0-17384.jpg",
+              "path": "1666003461373-0-17384.jpg",
+              "size": 219462,
+              "mime_type": "image/jpeg"
+          },
+          {
+              "id":2,
+              "originalname": "sample-edited.jpg",
+              "filename": "1666003461373-0-17384.jpg",
+              "path": "1666003461373-0-17384.jpg",
+              "size": 219462,
+              "mime_type": "image/jpeg"
+          }
+        ],
+        "background_image": [
+          {
+              "id":1,
+              "originalname": "sample-edited.jpg",
+              "filename": "1666003461373-0-17384.jpg",
+              "path": "1666003461373-0-17384.jpg",
+              "size": 219462,
+              "mime_type": "image/jpeg"
+          },
+          {
+              "id":2,
+              "originalname": "sample-edited.jpg",
+              "filename": "1666003461373-0-17384.jpg",
+              "path": "1666003461373-0-17384.jpg",
+              "size": 219462,
+              "mime_type": "image/jpeg"
+          }
+        ],
+        "poster_images": [
+          {
+            "id":1,
+            "originalname": "sample-edited.jpg",
+            "filename": "1666003461373-0-17384.jpg",
+            "path": "1666003461373-0-17384.jpg",
+            "size": 219462,
+            "mime_type": "image/jpeg"
+          },
+          {
+            "id":3,
+            "originalname": "sample-edited.jpg",
+            "filename": "1666003461373-0-17384.jpg",
+            "path": "1666003461373-0-17384.jpg",
+            "size": 219462,
+            "mime_type": "image/jpeg"
+          }
+        ]
+      }
+    }
+  ]
+}

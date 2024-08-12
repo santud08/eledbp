@@ -1,0 +1,23 @@
+{
+    
+    "language":{
+        "name": "language",
+        "in":"query",
+        "required":true,
+        "description": "language  which details you want",
+        "schema": {
+          "type": "string",
+          "example":"en"
+        }
+    },
+    "type":{
+        "name": "type",
+        "in":"query",
+        "required":false,
+        "description": "type  which details you want",
+        "schema": {
+            "type": "string",
+            "example":"all or send blank"
+        }
+    }
+}

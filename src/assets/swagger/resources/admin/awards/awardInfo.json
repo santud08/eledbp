@@ -1,0 +1,10 @@
+{
+    "name": "award_id",
+    "in":"path",
+    "required":true,
+    "description": "award id which details you want",
+    "schema": {
+        "type": "integer"
+    }
+}
+    

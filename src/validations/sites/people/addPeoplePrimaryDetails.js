@@ -1,0 +1,27 @@
+import { celebrate, Joi } from "celebrate";
+export const addPeoplePrimaryDetails = celebrate({
+  body: Joi.object({
+    name: Joi.string().required(),
+    site_language: Joi.string().required(),
+    relation_id: Joi.number().allow(null).allow("").optional(),
+    aka: Joi.string().allow(null).allow("").optional(),
+    biography: Joi.string().allow(null).allow("").optional(),
+    gender: Joi.string().allow(null).allow("").optional(),
+    birth_date: Joi.date().allow(null).allow("").optional(),
+    kobis_id: Joi.number().allow(null).allow("").optional(),
+    imdb_id: Joi.string().allow(null).allow("").optional(),
+    tmdb_id: Joi.number().allow(null).allow("").optional(),
+    tiving_id: Joi.string().allow(null).allow("").optional(),
+    odk_id: Joi.string().allow(null).allow("").optional(),
+    official_site: Joi.string().allow(null).allow("").optional(),
+    facebook: Joi.string().allow(null).allow("").optional(),
+    instagram: Joi.string().allow(null).allow("").optional(),
+    twitter: Joi.string().allow(null).allow("").optional(),
+    death_date: Joi.date().allow(null).allow("").optional(),
+    search_keyword: Joi.string().allow(null).allow("").optional(),
+    news_keyword: Joi.string().allow(null).allow("").optional(),
+    job: Joi.array().items(Joi.number().optional()).allow(null).allow("").optional(),
+    country: Joi.string().allow(null).allow("").optional(),
+    image: Joi.string().optional().allow("", null),
+  }),
+});

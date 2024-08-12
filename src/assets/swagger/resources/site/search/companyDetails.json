@@ -1,0 +1,52 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["company_id","type","page","limit"],
+          "type": "object",
+          "properties": {
+            "company_id": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string",
+              "example":"information/artist"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["company_id","type","page","limit"],
+          "type": "object",
+          "properties": {
+            "company_id": {
+              "type": "integer"
+            },
+            "type": {
+              "type": "string",
+              "example":"information/artist"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

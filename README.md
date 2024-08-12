@@ -1,2 +1,1 @@
-# eledbp
-basic structure with sequalize
+# 11-db-api structure

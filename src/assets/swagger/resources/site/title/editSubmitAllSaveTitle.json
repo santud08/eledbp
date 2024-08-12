@@ -1,0 +1,42 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["draft_relation_id","title_id","title_type"],
+          "type": "object",
+          "properties":{
+            "draft_relation_id": {
+              "type": "integer"
+            },
+            "title_id": {
+              "type": "integer"
+            },
+            "title_type": {
+              "type": "string",
+              "example":"movie/tv/webtoons"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["draft_relation_id","title_id","title_type"],
+          "type": "object",
+          "properties":{
+            "draft_relation_id": {
+              "type": "integer"
+            },
+            "title_id": {
+              "type": "integer"
+            },
+            "title_type": {
+              "type": "string",
+              "example":"movie/tv/webtoons"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

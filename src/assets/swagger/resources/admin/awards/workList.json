@@ -1,0 +1,56 @@
+{
+    
+    "search_text": {
+        "name": "search_text",
+        "in":"query",
+        "required":true,
+        "description": "search_text which search_text list you want",
+        "schema": {
+            "type": "string"
+        }
+    },
+    "page": {
+        "name": "page",
+        "in":"query",
+        "required":true,
+        "description": "page which page list you want",
+        "schema": {
+            "type": "integer",
+            "example":1,
+            "default":""
+        }
+    },
+    "limit": {
+        "name": "limit",
+        "in":"query",
+        "required":true,
+        "description": "how many items will fetch",
+        "schema": {
+            "type": "integer",
+            "example":10,
+            "default":""
+        }
+    },
+    "sort_order": {
+        "name": "sort_order",
+        "in":"query",
+        "required":false,
+        "description": "sort_order which sort_order list you want",
+        "schema": {
+            "type": "string",
+            "example":"ASC/DESC",
+            "default":""
+        }
+    },
+    "sort_by": {
+        "name": "sort_by",
+        "in":"query",
+        "required":false,
+        "description": "sort_by which sort_by list you want",
+        "schema": {
+            "type": "string",
+            "example":"id",
+            "default":""
+        }
+    }
+}

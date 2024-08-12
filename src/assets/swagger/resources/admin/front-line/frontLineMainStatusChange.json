@@ -1,0 +1,38 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "required":["area_key","status"],
+          "properties":{
+            "area_key": {
+              "type": "string",
+              "example":"top_news/trending/hot_video/comming_soon/latest_trailers/real_time_feeds/most_popular_shows/new_release/born_today"
+            },
+            "status": {
+              "type": "string",
+              "example":"active/inactive"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required":["area_key","status"],
+          "properties":{
+            "area_key": {
+              "type": "string",
+              "example":"top_news/trending/hot_video/comming_soon/latest_trailers/real_time_feeds/most_popular_shows/new_release/born_today"
+            },
+            "status": {
+              "type": "string",
+              "example":"active/inactive"
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

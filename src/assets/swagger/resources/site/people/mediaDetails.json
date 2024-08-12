@@ -1,0 +1,54 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "required":["person_id","type"],
+          "properties":{
+            "person_id": {
+              "type": "integer",
+              "example":1
+            },
+            "type": {
+              "type": "string",
+              "example":"video/image"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "required":["person_id","type"],
+          "properties":{
+            "person_id": {
+              "type": "integer",
+              "example":1
+            },
+            "type": {
+              "type": "string",
+              "example":"video/image"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

@@ -1,0 +1,13 @@
+{
+    "site_language":{
+        "name": "site_language",
+        "in":"query",
+        "required":false,
+        "description": "site_language of job list which site_language list you want",
+        "schema": {
+          "type": "string",
+          "example":"en",
+          "default": "en"
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "draft_request_id":{
+        "name": "draft_request_id",
+        "in":"query",
+        "required":false,
+        "description": "draft request id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "title_id":{
+        "name": "title_id",
+        "in":"query",
+        "required":true,
+        "description": "title id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "season_id":{
+        "name": "season_id",
+        "in":"query",
+        "required":false,
+        "description": "season id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "draft_season_id":{
+        "name": "draft_season_id",
+        "in":"query",
+        "required":false,
+        "description": "draft season id  which details you want",
+        "schema": {
+          "type": "integer",
+          "example":"1"
+        }
+    },
+    "language":{
+        "name": "language",
+        "in":"query",
+        "required":true,
+        "description": "language  which details you want",
+        "schema": {
+          "type": "string",
+          "example":"en"
+        }
+    }
+}

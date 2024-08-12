@@ -1,0 +1,49 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+          "required": ["title_id","site_language"],
+          "type": "object",
+          "properties": {
+            "title_id": {
+                "type": "integer",
+                "example":"",
+                "default":""
+            },
+            "draft_request_id": {
+                "type": "integer",
+                "example":"",
+                "default":""
+            },
+            "draft_season_id": {
+                "type": "integer",
+                "example":"",
+                "default":""
+            },
+            "season_id": {
+                "type": "integer",
+                "example":"",
+                "default":""
+            },
+            "draft_episode_id": {
+                "type": "integer",
+                "example":"",
+                "default":""
+            },
+            "site_language": {
+                "type": "string",
+                "example":"valid input are en/ko",
+                "default":""
+            },
+            "episode_details": {
+                "type": "array",
+                "items":{"type": "object","properties":{"id":{"type":"integer"},"name":{"type":"string"},"url":{"type":"string"},"poster":{"type":"string"},"release_date":{"type":"string","format":"date"},"episode_number":{"type":"integer"},"action_type":{"type":"string"}}},
+                "example":[{"id":"","name":"","url":"","poster":"","release_date":"","episode_number":"","action_type":"a/e/d"}]
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

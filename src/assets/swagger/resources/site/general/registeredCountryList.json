@@ -1,0 +1,12 @@
+{
+    "type":{
+        "name": "type",
+        "in":"query",
+        "required":true,
+        "description": "type which details you want",
+        "schema": {
+          "type": "string",
+          "example":"movie/tv/people"
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "properties":{
+            "agency_id": {
+              "type": "string",
+              "example":"A0003"
+            },
+            "agency_name": {
+              "type": "string"
+            },
+            "sort_by": {
+              "type": "string",
+              "example":"id/agency_id/agency_name"
+            },
+            "sort_order": {
+              "type": "string",
+              "example":"asc/desc"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties":{
+            "agency_id": {
+              "type": "string",
+              "example":"A0003"
+            },
+            "agency_name": {
+              "type": "string"
+            },
+            "sort_by": {
+              "type": "string",
+              "example":"id/agency_id/agency_name"
+            },
+            "sort_order": {
+              "type": "string",
+              "example":"asc/desc"
+            },
+            "page": {
+              "type": "integer",
+              "example":1
+            },
+            "limit": {
+              "type": "integer",
+              "example":10
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

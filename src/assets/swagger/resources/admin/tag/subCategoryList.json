@@ -1,0 +1,20 @@
+{
+    "category_id":{
+        "name": "category_id",
+        "in":"query",
+        "required":true,
+        "description": "category id  which details you want",
+        "schema": {
+          "type": "integer"
+        }
+    },
+    "sub_category_name":{
+        "name": "sub_category_name",
+        "in":"query",
+        "required":false,
+        "description": "sub category name  which details you want",
+        "schema": {
+          "type": "string"
+        }
+    }
+}

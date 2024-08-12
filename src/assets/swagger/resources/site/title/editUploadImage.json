@@ -1,0 +1,24 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "multipart/form-data": {
+        "schema": {
+          "required": ["images"],
+          "type": "object",
+          "properties":{
+            "title_id": {
+              "type": "integer"
+            },
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "images": {
+              "type": "array",
+              "items":{"type": "string","format":"binary"}
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

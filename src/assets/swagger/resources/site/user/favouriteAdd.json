@@ -1,0 +1,42 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "required": ["id","type"],
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "example":"id of title/people/award",
+              "default":""
+            },
+            "type": {
+              "type": "string",
+              "example":"valid input are title/people/award",
+              "default":""
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "required": ["id","type"],
+          "type": "object",
+          "properties": {
+            "id": {
+                "type": "integer",
+                "example":"id of title/people/award",
+                "default":""
+            },
+            "type": {
+                "type": "string",
+                "example":"valid input are title/people/award",
+                "default":""
+            }
+          }
+        }
+      }
+    },
+    "required": true
+}

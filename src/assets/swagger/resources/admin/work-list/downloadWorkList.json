@@ -1,0 +1,90 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/x-www-form-urlencoded": {
+        "schema": {
+          "type": "object",
+          "properties":{
+            "export_type": {
+              "type": "string",
+              "example":"xls/json"
+            },
+            "search_type": {
+              "type": "string"
+            },
+            "search_title_name": {
+              "type": "string"
+            },
+            "search_id_type": {
+              "type": "string"
+            },
+            "search_id": {
+              "type": "string"
+            },
+            "search_date": {
+              "type": "string"
+            },
+            "tiving_id": {
+              "type": "string"
+            },
+            "selected_id": {
+              "type": "array",
+              "items":{"type": "string"},
+              "example":["3200da9d-4a30-4437-b271-8617e684f195"]
+            },
+            "sort_by": {
+              "type": "string",
+              "example":"blank or type/title/unique_id/modified_date/tiving_id/worker"
+            },
+            "sort_order": {
+              "type": "string",
+              "example":"blank or asc/desc"
+            }
+          }
+        }
+      },
+      "application/json": {
+        "schema": {
+          "type": "object",
+          "properties":{
+            "export_type": {
+              "type": "string",
+              "example":"xls/json"
+            },
+            "search_type": {
+              "type": "string"
+            },
+            "search_title_name": {
+              "type": "string"
+            },
+            "search_id_type": {
+              "type": "string"
+            },
+            "search_id": {
+              "type": "string"
+            },
+            "search_date": {
+              "type": "string"
+            },
+            "tiving_id": {
+              "type": "string"
+            },
+            "selected_id": {
+              "type": "array",
+              "items":{"type": "string"},
+              "example":["3200da9d-4a30-4437-b271-8617e684f195"]
+            },
+            "sort_by": {
+              "type": "string",
+              "example":"blank or type/title/unique_id/modified_date/tiving_id/worker"
+            },
+            "sort_order": {
+              "type": "string",
+              "example":"blank or asc/desc"
+            }
+          }
+        }
+      }
+    },
+    "required": false
+}

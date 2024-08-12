@@ -1,0 +1,11 @@
+{
+    "id":{
+        "name": "id",
+        "in":"query",
+        "required":true,
+        "description": "id which details you want",
+        "schema": {
+          "type": "integer"
+        }
+    }
+}

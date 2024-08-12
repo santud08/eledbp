@@ -1,0 +1,40 @@
+{
+    "description": "An object defining our schema for this request",
+    "content": {
+      "application/json": {
+        "schema": {
+          "required": ["draft_request_id","site_language"],
+          "type": "object",
+          "properties":{
+            "draft_request_id": {
+              "type": "integer"
+            },
+            "draft_media_id": {
+              "type": "integer"
+            },
+            "site_language": {
+              "type": "string",
+              "example":"en"
+            },
+            "video_list": {
+              "type": "array",
+              "items":{"type": "object","properties":{"video_url":{"type":"string"},"video_title":{"type":"string"},"is_official_trailer":{"type":"string"},"thumbnail":{"type":"string"},"view_count":{"type":"integer"},"video_duration":{"type":"string"}}},
+              "example":[{"video_url":"http://sample.url","video_title":"nokia","is_official_trailer":"y","thumbnail":"","view_count":"","video_duration":""}]
+            },
+            "background_image": {
+              "type": "array",
+              "items":{"type": "object","properties":{"originalname":{"type":"string"},"filename":{"type":"string"},"path":{"type":"string"},"size":{"type":"integer"},"mime_type":{"type":"string"}}},
+              "example":[{"originalname":"17384.jpg","filename":"1666003461373-0-17384.jpg","path":"https://11db.s3.ap-northeast-1.amazonaws.com/uploads/temp/people/images/original/tom-ellis-637266-1673597189406.jpg","size":219462,"mime_type":"image/jpeg"}]
+            },
+            "image_list": {
+              "type": "array",
+              "items":{"type": "object","properties":{"originalname":{"type":"string"},"filename":{"type":"string"},"path":{"type":"string"},"size":{"type":"integer"},"mime_type":{"type":"string"}}},
+              "example":[{"originalname":"17384.jpg","filename":"1666003461373-0-17384.jpg","path":"public\\uploads\\1\\images\\original\\1666003461373-0-17384.jpg","size":219462,"mime_type":"image/jpeg"}]
+            }
+            
+          }
+        }
+      }
+    },
+    "required": true
+}
